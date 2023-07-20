@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ContainerSC = styled.div`
   /* width: 100%; */
-  height: 200px;
+  height: 1000px;
 `;
 
 interface ContainerProps {

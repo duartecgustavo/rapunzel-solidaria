@@ -1,0 +1,17 @@
+export const colors = {
+  white_FFFFFF: "#ffffff",
+  white_transparent_10: "rgba(255, 255, 255, 0.1)",
+  white_transparent_20: "rgba(255, 255, 255, 0.2)",
+  white_transparent_70: "rgba(255, 255, 255, 0.7)",
+  white_gray_E7E7E7: "#e7e7e7",
+  black_000000: "#000000",
+  black_transparent_25: "rgba(0, 0, 0, 0.25)",
+  primary_color_violet_A73AA7: "#a73aa7",
+  primary_transparent_color_violet_10: "rgba(167, 58, 167, 0.1)",
+  secondary_color_green_37DBC2: "#37dbc2",
+  third_color_violet_blue_6F66BA: "#6f66ba",
+  four_color_yellow_E1FF26: "#e1ff26",
+  five_color_violet_pink_BC6BFA: "#bc6bfa",
+  six_color_orange_C18151: "#c18151",
+  seven_color_violet_dark_6E36B3: "#6e36b3",
+};
