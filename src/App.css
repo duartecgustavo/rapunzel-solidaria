@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Concert+One&display=swap");
+
 * {
   padding: 0px;
   margin: 0px !important;
   box-sizing: border-box;
+  font-family: "Concert One", "Architects Daughter", sans-serif !important;
 }
 
 a {
@@ -14,7 +17,6 @@ a:hover {
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-weight: 400;
 
   color-scheme: light dark;
