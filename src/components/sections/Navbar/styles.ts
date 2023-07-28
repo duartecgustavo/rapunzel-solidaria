@@ -17,17 +17,30 @@ export const NavbarSC = styled.div`
 
   @media (max-width: 768px) {
     position: relative;
+    background-color: ${colors.four_color_yellow_E1FF26};
+    .desktop {
+      display: none !important;
+    }
+    .mobile {
+      display: flex !important;
+    }
+  }
+  .desktop {
+    display: flex;
+  }
+  .mobile {
+    display: none;
   }
 `;
 
 export const IconLogoSC = styled(IconLogoRapunzelSolidaria)`
   width: 180px;
 
-  position: absolute;
-  z-index: 1;
-  left: 50%;
-  top: 20%;
-  transform: translate(-50%);
+  // position: absolute;
+  // z-index: 1;
+  // left: 50%;
+  // top: 20%;
+  // transform: translate(-50%);
   &:hover {
     cursor: pointer;
   }
