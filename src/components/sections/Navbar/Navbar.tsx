@@ -13,21 +13,14 @@ const Navbar = () => {
   return (
     <>
       <NavbarSC
-        className="container-fluid justify-content-center align-items-center"
+        className="d-flex container-fluid justify-content-center align-items-center"
         id="header-top"
       >
-
-
-
-
-        <div className="col-10 justify-content-between align-items-center" style={{ display: "flex" }}>
-
+        <div className="d-flex col-10 justify-content-between align-items-center">
           <IconLogoSC />
-
-
           <div className="gap-2 mobile" style={{ position: "relative" }} onClick={() => setDropdown(!dropdown)}>
+            <TextSC>MENU</TextSC>
             <IconMenuSC />
-            <TextSC>Menu</TextSC>
             {dropdown &&
               <ul style={{
                 background: "white",
@@ -45,10 +38,9 @@ const Navbar = () => {
             }
           </div>
 
-
           <div className="d-flex gap-5 align-items-center desktop">
-            <ButtonSC>Quero ajudar</ButtonSC>
             <ButtonSC outlined>Entre em contato</ButtonSC>
+            <ButtonSC>Quero ajudar</ButtonSC>
           </div>
         </div>
       </NavbarSC>

@@ -15,37 +15,42 @@ export const NavbarSC = styled.div`
     z-index: 2;
   }
 
-  @media (max-width: 768px) {
-    position: relative;
-    background-color: ${colors.four_color_yellow_E1FF26};
-    .desktop {
-      display: none !important;
-    }
-    .mobile {
-      display: flex !important;
-    }
-  }
   .desktop {
     display: flex;
   }
+
   .mobile {
     display: none;
+  }
+
+  @media (max-width: 768px) {
+    position: relative;
+    background-color: ${colors.five_color_violet_pink_BC6BFA};
+
+    .desktop {
+      display: none !important;
+    }
+
+    .mobile {
+      display: flex !important;
+    }
   }
 `;
 
 export const IconLogoSC = styled(IconLogoRapunzelSolidaria)`
   width: 180px;
+  height: 100px
 
-  // position: absolute;
-  // z-index: 1;
-  // left: 50%;
-  // top: 20%;
-  // transform: translate(-50%);
   &:hover {
+    width: 100px !important;
     cursor: pointer;
   }
 `;
 export const IconMenuSC = styled(IconMenu)`
+  fill: ${colors.secondary_color_green_37B0CB};
+  @media (max-width: 768px) {
+    fill: ${colors.white_FFFFFF};
+  }
   &:hover {
     cursor: pointer;
   }
@@ -54,10 +59,14 @@ export const IconMenuSC = styled(IconMenu)`
 export const TextSC = styled.p`
   font-weight: 700;
   color: ${colors.secondary_color_green_37B0CB};
+  @media (max-width: 768px) {
+    color: ${colors.white_FFFFFF};
+  }
 `;
 
 export const ButtonSC = styled.button<{ outlined?: boolean }>`
   height: 35px;
+  user-select: none;
   color: ${(props) =>
     props.outlined
       ? colors.secondary_color_green_37B0CB
@@ -65,7 +74,20 @@ export const ButtonSC = styled.button<{ outlined?: boolean }>`
   border-width: ${(props) => props.outlined && "0px"};
   font-weight: 700;
   border-radius: 17.5px;
+  border: 2px solid transparent;
   padding: 0px 10px 0px 10px;
   background-color: ${(props) =>
     props.outlined ? "transparent" : colors.secondary_color_green_37B0CB};
+
+  &:hover {
+    background-color: ${(props) =>
+      props.outlined
+        ? "transparent"
+        : colors.secondary_color_green_light_6FBECF};
+    color: ${(props) =>
+      props.outlined
+        ? colors.secondary_color_green_light_6FBECF
+        : colors.primary_color_violet_A73AA7};
+    border: ${(props) => props.outlined && "3px solid #6FBECF"};
+  }
 `;

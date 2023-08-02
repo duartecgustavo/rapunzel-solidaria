@@ -25,29 +25,45 @@ export const TextLink = styled.p`
   font-size: 18px;
   padding-top: 10px;
   font-family: "Architects Daughter" !important;
+  user-select: none;
 `;
 
 export const JoanaSvgSC = styled(Joana)`
+  @media (max-width: 768px) {
+    color: ${colors.white_FFFFFF};
+  }
   &:hover {
     cursor: pointer;
   }
 `;
 export const JessicaSvgSC = styled(Jessica)`
+  @media (max-width: 768px) {
+    color: ${colors.white_FFFFFF};
+  }
   &:hover {
     cursor: pointer;
   }
 `;
 export const JaquelineSvgSC = styled(Jaqueline)`
+  @media (max-width: 768px) {
+    color: ${colors.white_FFFFFF};
+  }
   &:hover {
     cursor: pointer;
   }
 `;
 export const JulianaSvgSC = styled(Juliana)`
+  @media (max-width: 768px) {
+    color: ${colors.white_FFFFFF};
+  }
   &:hover {
     cursor: pointer;
   }
 `;
 export const JuremaSvgSC = styled(Jurema)`
+  @media (max-width: 768px) {
+    color: ${colors.white_FFFFFF};
+  }
   &:hover {
     cursor: pointer;
   }
