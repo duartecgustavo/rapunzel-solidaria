@@ -2,7 +2,7 @@ import "@/App.css";
 import { colors } from "@/styles/colors";
 import { BeautyTitle, Container } from "@/components/shareds";
 import { useState } from "react";
-import { GirlCardLinkToSection, Navbar } from "@/components/sections";
+import { Footer, GirlCardLinkToSection, Navbar } from "@/components/sections";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -27,6 +27,7 @@ function App() {
       <Container background="red">
         <div className="col-10">dsasd</div>
       </Container>
+      <Footer />
     </>
   );
 }
