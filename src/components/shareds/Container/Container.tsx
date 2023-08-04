@@ -1,23 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-import styled from "styled-components";
 
-const ContainerSC = styled.div<IContainerProps>`
-  height: 100vh;
-  flex-direction: column;
-  align-items: ${(props) => props.align || "center"};
-  justify-content: ${(props) => props.justify || "center"};
-  background-color: ${(props) => props.color || "black"};
+import { ContainerSC } from "./styles";
 
-  @media (max-width: 768px) {
-    height: auto;
-  }
-`;
-
-interface IContainerProps {
+export interface IContainerProps {
   children: React.ReactNode;
   background?: string;
   justify?: "left" | "center" | "right";
   align?: "left" | "center" | "right";
+  height?: string;
 }
 
 const Container = ({
@@ -25,6 +15,7 @@ const Container = ({
   background,
   justify,
   align,
+  height,
 }: IContainerProps) => {
   return (
     <>
@@ -33,6 +24,7 @@ const Container = ({
         color={background}
         align={align}
         justify={justify}
+        height={height}
       >
         {children}
       </ContainerSC>

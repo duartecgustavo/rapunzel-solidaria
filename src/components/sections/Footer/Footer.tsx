@@ -1,26 +1,18 @@
 import { Text } from "@/components/shareds";
 import { colors } from "@/styles/colors";
-import styled from "styled-components";
-import { ReactComponent as Email } from "@/assets/icon-email.svg";
-import { ReactComponent as Facebook } from "@/assets/icon-facebook.svg";
-import { ReactComponent as Instagram } from "@/assets/icon-instagram.svg";
-import { ReactComponent as WhatsApp } from "@/assets/icon-whatsApp.svg";
-import { ReactComponent as Youtube } from "@/assets/icon-youtube.svg";
-
-const FooterSC = styled.div`
-  width: 100%;
-  background: ${colors.seven_color_violet_dark_6E36B3};
-`;
-
-export const EmailSvgSC = styled(Email)``;
-export const FacebookSvgSC = styled(Facebook)``;
-export const InstagramSvgSC = styled(Instagram)``;
-export const WhatsAppSvgSC = styled(WhatsApp)``;
-export const YoutubeSvgSC = styled(Youtube)``;
+import {
+  EmailSvgSC,
+  FacebookSvgSC,
+  FooterSC,
+  InstagramSvgSC,
+  WhatsAppSvgSC,
+  YoutubeSvgSC,
+} from "./style";
 
 const Footer = () => {
   return (
     <>
+      {/* pendente - FIGMA - ajustar responsividade, com base no prototipo figma versão mobile */}
       <FooterSC className="d-flex container-fluid justify-content-center align-items-center py-5">
         <div className="d-flex col-10 justify-content-between align-items-start">
           <div
@@ -71,6 +63,7 @@ const Footer = () => {
                 justifyContent: "flex-end",
               }}
             >
+              {/* pendente - ajustar links para todas essas redes, além de hover dos componentes */}
               <a href="">
                 <EmailSvgSC />
               </a>

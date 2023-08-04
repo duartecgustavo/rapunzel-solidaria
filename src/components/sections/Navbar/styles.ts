@@ -39,7 +39,7 @@ export const NavbarSC = styled.div`
 
 export const IconLogoSC = styled(IconLogoRapunzelSolidaria)`
   width: 180px;
-  height: 100px
+  height: 100px;
 
   &:hover {
     width: 100px !important;
