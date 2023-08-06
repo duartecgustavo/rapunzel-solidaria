@@ -52,7 +52,7 @@ const Navbar = () => {
           </div>
 
           <div className="d-flex gap-5 align-items-center desktop">
-            {/* pendente - Ao clicar em entre em contato, deve aparecer um modal - prototipar modal no figma */}
+            {/* pendente - FIGMA - Ao clicar em entre em contato, deve aparecer um modal - prototipar modal no figma */}
             <ButtonSC outlined>Entre em contato</ButtonSC>
             {/* pendente - Ao clicar em entre em como ajudar, deve aparecer um modal com as formas de ajuda e apoio (seja pix, doação, patrocinio) - prototipar modal no figma */}
             <ButtonSC>Quero ajudar</ButtonSC>
