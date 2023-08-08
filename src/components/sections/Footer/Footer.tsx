@@ -12,7 +12,7 @@ import {
 const Footer = () => {
   return (
     <>
-      {/* pendente - FIGMA - ajustar responsividade, com base no prototipo figma versão mobile */}
+      {/* pendente - ajustar responsividade, com base no prototipo figma versão mobile */}
       <FooterSC className="d-flex container-fluid justify-content-center align-items-center py-5">
         <div className="d-flex col-10 justify-content-between align-items-start">
           <div

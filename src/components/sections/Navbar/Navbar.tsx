@@ -25,7 +25,7 @@ const Navbar = () => {
           >
             <TextSC>MENU</TextSC>
             <IconMenuSC />
-            {/* pendente - FIGMA - Ajustar dropdown quando mobile - clicar fora - hover - opções | prototipar dropdown no figma  */}
+            {/* pendente - Ajustar dropdown quando mobile - clicar fora - hover - opções */}
             {dropdown && (
               <ul
                 style={{
@@ -52,9 +52,9 @@ const Navbar = () => {
           </div>
 
           <div className="d-flex gap-5 align-items-center desktop">
-            {/* pendente - FIGMA - Ao clicar em entre em contato, deve aparecer um modal - prototipar modal no figma */}
+            {/* pendente - Ao clicar em entre em contato, deve aparecer um modal */}
             <ButtonSC outlined>Entre em contato</ButtonSC>
-            {/* pendente - Ao clicar em entre em como ajudar, deve aparecer um modal com as formas de ajuda e apoio (seja pix, doação, patrocinio) - prototipar modal no figma */}
+            {/* pendente - Ao clicar em entre em como ajudar, deve aparecer um modal com as formas de ajuda e apoio (seja pix, doação, patrocinio) */}
             <ButtonSC>Quero ajudar</ButtonSC>
           </div>
         </div>
