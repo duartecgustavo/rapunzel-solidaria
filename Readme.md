@@ -11,10 +11,9 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 ---
 
 ### Prints...
-![imagem](/public/print_home.png)
-![imagem](/public/print_daor.png)
 
-<img src="/public/print_home.png" width="300" height="200" alt="Texto alternativo">
+<img src="/public/print_home.png" width="500" height="280" alt="Print da área de links">
+<img src="/public/print_doar.png" width="500" height="280" alt="Print pagina de doar cabelo">
 
 ---
 
