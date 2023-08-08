@@ -8,7 +8,12 @@ O propósito deste site é **receber doações de cabelo** de todos os cantos do
 
 Para obter mais informações sobre o projeto original, visite o [**site oficial**](https://www.rapunzelsolidaria.org.br/).
 
-![imagem](./print_home)
+---
+
+### Prints...
+
+<img src="/public/print_home.png" width="500" height="280" alt="Print da área de links">
+<img src="/public/print_doar.png" width="500" height="280" alt="Print pagina de doar cabelo">
 
 ---
 
@@ -20,7 +25,7 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 ---
 
-### Instalação do projeto
+### Instalação do projeto && Como rodar
 
 ```sh
 git clone https://github.com/duartecgustavo/rapunzel-solidaria.git 
