@@ -11,8 +11,7 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* pendente - Retirar essa sessão quando for mobile  */}
-      <Container background={colors.primary_color_violet_A73AA7}>
+      <Container background={colors.primary_color_violet_A73AA7} mobile={false}>
         <PrimaryPage />
       </Container>
       <Container background="red" height="10vh">
@@ -30,7 +29,6 @@ function App() {
       <Container background="orange" height="10vh">
         <div className="col-10">DEPOIMENTOS</div>
       </Container>
-      {/* pendente - Criar componente - page - que englobe o footer  */}
       <Footer />
     </>
   );
