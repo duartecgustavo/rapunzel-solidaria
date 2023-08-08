@@ -25,7 +25,7 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 ---
 
-### Instalação do projeto
+### Instalação do projeto && Como rodar
 
 ```sh
 git clone https://github.com/duartecgustavo/rapunzel-solidaria.git 
