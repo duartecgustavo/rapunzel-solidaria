@@ -8,7 +8,7 @@ O propósito deste site é **receber doações de cabelo** de todos os cantos do
 
 Para obter mais informações sobre o projeto original, visite o [**site oficial**](https://www.rapunzelsolidaria.org.br/).
 
-![imagem](./public/print_home)
+![imagem](./public/print_home.png)
 
 ---
 
