@@ -4,7 +4,6 @@ import { Container } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 import PrimaryPage from "@/pages/PrimaryPage";
 
-// pendente - Criar Readme maneiro
 // pendente - FIGMA, Criar prototipo mobile
 
 function App() {
