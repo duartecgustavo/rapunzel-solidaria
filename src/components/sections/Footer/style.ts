@@ -1,18 +1,20 @@
 import styled from "styled-components";
 import { colors } from "@/styles/colors";
-import { ReactComponent as Email } from "@/assets/icon-email.svg";
-import { ReactComponent as Facebook } from "@/assets/icon-facebook.svg";
-import { ReactComponent as Instagram } from "@/assets/icon-instagram.svg";
-import { ReactComponent as WhatsApp } from "@/assets/icon-whatsApp.svg";
-import { ReactComponent as Youtube } from "@/assets/icon-youtube.svg";
 
 export const FooterSC = styled.div`
   width: 100%;
   background: ${colors.seven_color_violet_dark_6E36B3};
 `;
 
-export const EmailSvgSC = styled(Email)``;
-export const FacebookSvgSC = styled(Facebook)``;
-export const InstagramSvgSC = styled(Instagram)``;
-export const WhatsAppSvgSC = styled(WhatsApp)``;
-export const YoutubeSvgSC = styled(Youtube)``;
+export const FooterSectionSC = styled.section`
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+`;
+
+export const GridContainerSC = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 20px !important;
+  gap: 5px;
+`;

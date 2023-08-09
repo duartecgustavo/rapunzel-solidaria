@@ -1,9 +1,36 @@
 // eslint-disable-next-line no-unused-vars
-import { useState } from "react";
-import { ButtonSC, IconLogoSC, IconMenuSC, NavbarSC, TextSC } from "./styles";
+import { colors } from "@/styles/colors";
+import { useEffect, useRef, useState } from "react";
+import {
+  ButtonSC,
+  IconLogoSC,
+  IconMenuSC,
+  LiSC,
+  NavbarSC,
+  TextSC,
+  UlSC,
+} from "./styles";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    function handleOutsideClick(event: any) {
+      if (
+        dropdownRef.current &&
+        !(dropdownRef.current as HTMLElement).contains(event.target)
+      ) {
+        setDropdown(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleOutsideClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, []);
 
   window.addEventListener("scroll", () => {
     const header: any = document.querySelector("#header-top");
@@ -17,37 +44,51 @@ const Navbar = () => {
         id="header-top"
       >
         <div className="d-flex col-10 justify-content-between align-items-center">
+          {/* pendente - logo diminuindo bizarramente */}
+
           <IconLogoSC />
           <div
             className="gap-2 mobile"
             style={{ position: "relative" }}
             onClick={() => setDropdown(!dropdown)}
+            ref={dropdownRef}
           >
             <TextSC>MENU</TextSC>
             <IconMenuSC />
-            {/* pendente - Ajustar dropdown quando mobile - clicar fora - hover - opções */}
             {dropdown && (
-              <ul
-                style={{
-                  background: "white",
-
-                  position: "absolute",
-                  top: "35px",
-
-                  padding: "8px",
-                  borderRadius: "8px",
-                }}
-              >
-                <li>
-                  <a href="#">Action</a>
-                </li>
-                <li>
-                  <a href="#">Another action</a>
-                </li>
-                <li>
-                  <a href="#">Something else here</a>
-                </li>
-              </ul>
+              // pendente - fazer referencias as sessões
+              <UlSC style={{}}>
+                <LiSC
+                  style={{
+                    backgroundColor: `${colors.five_color_violet_pink_BC6BFA_40}`,
+                  }}
+                >
+                  <a href="#">Quero ajudar.</a>
+                </LiSC>
+                <LiSC
+                  style={{
+                    borderBottom: `1px solid ${colors.black_transparent_80}`,
+                    backgroundColor: `${colors.five_color_violet_pink_BC6BFA_40}`,
+                  }}
+                >
+                  <a href="#">Entre em contato.</a>
+                </LiSC>
+                <LiSC>
+                  <a href="#">Quem somos?</a>
+                </LiSC>
+                <LiSC>
+                  <a href="#">Como doar?</a>
+                </LiSC>
+                <LiSC>
+                  <a href="#">Como receber?</a>
+                </LiSC>
+                <LiSC>
+                  <a href="#">Depoimentos.</a>
+                </LiSC>
+                <LiSC>
+                  <a href="#">Avisos.</a>
+                </LiSC>
+              </UlSC>
             )}
           </div>
 

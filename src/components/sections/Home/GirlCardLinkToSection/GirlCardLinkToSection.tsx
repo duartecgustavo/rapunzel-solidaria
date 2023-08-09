@@ -36,7 +36,6 @@ const GirlCardLinkToSection = ({
   };
 
   return (
-    // pendente - Ajustar hover, ao passar o mouse, a garota aumentar um pouquinho junto ao texto
     <ContainerGirlCardLinkToSection className="col-10 col-sm-6 col-md-4 col-lg-4 	col-xl-2">
       {GetSvgGirl(GirlName)}
       <TextLink>{TxtLink}</TextLink>

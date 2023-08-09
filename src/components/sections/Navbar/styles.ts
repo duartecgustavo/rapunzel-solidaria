@@ -91,3 +91,25 @@ export const ButtonSC = styled.button<{ outlined?: boolean }>`
     border: ${(props) => props.outlined && "3px solid #6FBECF"};
   }
 `;
+
+export const UlSC = styled.ul`
+  background: white;
+  list-style-type: none;
+
+  width: max-content;
+  position: absolute;
+  top: 35px;
+  right: 0%;
+  z-index: 2;
+  padding: 0px;
+
+  border-radius: 8px;
+`;
+export const LiSC = styled.ul`
+  padding: 3px 8px 3px 8px;
+
+  & > a:hover {
+    cursor: pointer;
+    background-color: red;
+  }
+`;

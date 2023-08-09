@@ -6,12 +6,19 @@ export interface ITextProps {
   size?: string;
   align?: "left" | "center" | "right";
   family?: "Architects Daughter" | "Concert One";
+  style?: React.CSSProperties;
 }
 
-const Text = ({ children, color, size, align, family }: ITextProps) => {
+const Text = ({ children, color, size, align, family, style }: ITextProps) => {
   return (
     <>
-      <TextSC color={color} size={size} align={align} family={family}>
+      <TextSC
+        color={color}
+        size={size}
+        align={align}
+        family={family}
+        style={style}
+      >
         {children}
       </TextSC>
     </>
