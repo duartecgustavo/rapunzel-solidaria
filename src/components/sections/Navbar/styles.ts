@@ -42,8 +42,11 @@ export const IconLogoSC = styled(IconLogoRapunzelSolidaria)`
   height: 100px;
 
   &:hover {
-    width: 100px !important;
     cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    width: 100px !important;
   }
 `;
 export const IconMenuSC = styled(IconMenu)`

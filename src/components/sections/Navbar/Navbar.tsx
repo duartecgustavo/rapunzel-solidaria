@@ -94,11 +94,12 @@ const Navbar = () => {
 
           <div className="d-flex gap-5 align-items-center desktop">
             {/* pendente - Ao clicar em entre em contato, deve aparecer um modal */}
-            <ButtonSC outlined>Entre em contato</ButtonSC>
+            <ButtonSC outlined type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalContact">Entre em contato</ButtonSC>
             {/* pendente - Ao clicar em entre em como ajudar, deve aparecer um modal com as formas de ajuda e apoio (seja pix, doação, patrocinio) */}
-            <ButtonSC>Quero ajudar</ButtonSC>
+            <ButtonSC type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalHowToHelp">Quero ajudar</ButtonSC>
           </div>
         </div>
+
       </NavbarSC>
     </>
   );

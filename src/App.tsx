@@ -3,6 +3,7 @@ import { Footer, Navbar } from "@/components/sections";
 import { Container } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 import PrimaryPage from "@/pages/PrimaryPage";
+import Modals from "@/pages/Modals";
 
 // pendente - FIGMA, Criar prototipo mobile
 
@@ -29,6 +30,7 @@ function App() {
         <div className="col-10">DEPOIMENTOS</div>
       </Container>
       <Footer />
+      <Modals />
     </>
   );
 }
