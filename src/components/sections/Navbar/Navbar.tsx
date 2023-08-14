@@ -60,21 +60,15 @@ const Navbar = () => {
               <UlSC style={{}}>
                 <LiSC
                   style={{
-                    backgroundColor: `${colors.five_color_violet_pink_BC6BFA_40}`,
-                  }}
-                >
-                  <a href="#">Quero ajudar.</a>
-                </LiSC>
-                <LiSC
-                  style={{
                     borderBottom: `1px solid ${colors.black_transparent_80}`,
                     backgroundColor: `${colors.five_color_violet_pink_BC6BFA_40}`,
                   }}
                 >
-                  <a href="#">Entre em contato.</a>
+                  <a href="#" outlined data-bs-toggle="modal" data-bs-target="#ModalContact">Entre em contato.</a>
                 </LiSC>
+                {/* pendente - ajutar cor da opção de quero ajudar no dropdown */}
                 <LiSC>
-                  <a href="#">Quem somos?</a>
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#ModalHowToHelp">Quero ajudar.</a>
                 </LiSC>
                 <LiSC>
                   <a href="#">Como doar?</a>

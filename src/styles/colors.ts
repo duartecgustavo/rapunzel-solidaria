@@ -15,6 +15,7 @@ export const colors = {
   secondary_color_green_dark_1CB4D6: "#1CB4D6",
   third_color_violet_blue_6F66BA: "#6f66ba",
   four_color_yellow_E1FF26: "#e1ff26",
+  four_color_yellow_E1FF26_60: "rgba(225, 255, 38, 0.6)",
   five_color_violet_pink_BC6BFA: "#bc6bfa",
   five_color_violet_pink_BC6BFA_40: "rgba(188, 107, 250, 0.4)",
   six_color_orange_C18151: "#c18151",

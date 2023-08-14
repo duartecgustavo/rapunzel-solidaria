@@ -2,7 +2,7 @@ import { TextMarkSC } from "./styles";
 
 export interface ITextMarkProps {
   children: React.ReactNode;
-  color?: string;
+  color?: "White" | "Yellow";
   family?: "Architects Daughter" | "Concert One";
 }
 

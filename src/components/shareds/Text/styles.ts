@@ -8,4 +8,5 @@ export const TextSC = styled.p<ITextProps>`
   font-family: ${(props) => `${props.family} !important`};
   cursor: cell;
   user-select: none;
+  margin-top: ${(props) => `${props.marginTop} !important`};
 `;

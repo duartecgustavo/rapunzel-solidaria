@@ -8,11 +8,11 @@ interface IBeautyTitle {
   Color: "Violet" | "White";
 }
 
-const BeautyTitle = ({ FrontTitle, BackTitle }: IBeautyTitle) => {
+const BeautyTitle = ({ FrontTitle, BackTitle, Color }: IBeautyTitle) => {
   return (
     <ContainerTitleSC>
-      <FrontTitleSC>{FrontTitle}</FrontTitleSC>
-      <BackTitleSC>{BackTitle}</BackTitleSC>
+      <FrontTitleSC color={Color}>{FrontTitle}</FrontTitleSC>
+      <BackTitleSC color={Color}>{BackTitle}</BackTitleSC>
     </ContainerTitleSC>
   );
 };

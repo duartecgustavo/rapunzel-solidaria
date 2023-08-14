@@ -12,5 +12,8 @@ export const TextMarkSC = styled.div<ITextMarkProps>`
   border-radius: 2px;
 
   font-family: Architects Daughter !important;
-  background-color: ${(props) => props.color || colors.white_transparent_30};
+  background-color: ${(props) =>
+    props.color == "White"
+      ? colors.white_transparent_30
+      : colors.four_color_yellow_E1FF26_60};
 `;

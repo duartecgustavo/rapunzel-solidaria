@@ -26,7 +26,7 @@ const Footer = () => {
             style={{ display: "flex" }}
           >
             Nos encontre através de nossas{" "}
-            <TextMark> redes sociais e formas de contato! </TextMark>
+            <TextMark color="White"> redes sociais e formas de contato! </TextMark>
           </Text>
           <GridContainerSC>
             <SocialMidia contact="whatsapp" />
@@ -55,7 +55,7 @@ const Footer = () => {
             style={{ display: "flex" }}
           >
             Rua Amaro Cavalheiro, 140 - Pinheiros - De{" "}
-            <TextMark> terça a sábado das 10h às 17h. </TextMark>
+            <TextMark color="White"> terça a sábado das 10h às 17h. </TextMark>
           </Text>
         </FooterSectionSC>
         <FooterSectionSC>

@@ -16,7 +16,10 @@ export const FrontTitleSC = styled.p`
   position: absolute;
   z-index: 1;
   font-size: 36px;
-  color: ${colors.white_FFFFFF};
+  color: ${(props) =>
+    props.color == "Violet"
+      ? colors.five_color_violet_pink_BC6BFA
+      : colors.white_FFFFFF};
   cursor: cell;
   user-select: none;
 `;
@@ -24,7 +27,10 @@ export const FrontTitleSC = styled.p`
 export const BackTitleSC = styled.p`
   font-weight: bold;
   font-size: 70px;
-  color: ${colors.white_transparent_10};
+  color: ${(props) =>
+    props.color == "Violet"
+      ? colors.primary_transparent_color_violet_10
+      : colors.white_transparent_10};
   cursor: cell;
   user-select: none;
 `;
