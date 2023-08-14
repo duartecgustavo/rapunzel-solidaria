@@ -9,4 +9,9 @@ export const TextSC = styled.p<ITextProps>`
   cursor: cell;
   user-select: none;
   margin-top: ${(props) => `${props.marginTop} !important`};
+
+  @media (max-width: 768px) {
+    text-align: center !important;
+    flex-direction: column !important;
+  }
 `;

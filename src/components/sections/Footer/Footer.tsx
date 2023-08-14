@@ -2,12 +2,10 @@ import { SocialMidia, Text, TextMark } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 import { FooterSC, FooterSectionSC, GridContainerSC } from "./style";
 
-// pendente - ajustar responsividade
-
 const Footer = () => {
   return (
     <>
-      <FooterSC className="d-flex container-fluid justify-content-center flex-column align-items-center py-5 gap-5">
+      <FooterSC className="d-flex container-fluid justify-content-center flex-column align-items-center gap-5">
         <FooterSectionSC>
           <Text
             size="24px"
@@ -26,7 +24,10 @@ const Footer = () => {
             style={{ display: "flex" }}
           >
             Nos encontre através de nossas{" "}
-            <TextMark color="White"> redes sociais e formas de contato! </TextMark>
+            <TextMark color="White">
+              {" "}
+              redes sociais e formas de contato!{" "}
+            </TextMark>
           </Text>
           <GridContainerSC>
             <SocialMidia contact="whatsapp" />
@@ -58,7 +59,7 @@ const Footer = () => {
             <TextMark color="White"> terça a sábado das 10h às 17h. </TextMark>
           </Text>
         </FooterSectionSC>
-        <FooterSectionSC>
+        <FooterSectionSC className="gap-4">
           <Text
             size="24px"
             color={colors.white_FFFFFF}

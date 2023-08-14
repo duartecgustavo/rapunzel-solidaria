@@ -44,8 +44,6 @@ const Navbar = () => {
         id="header-top"
       >
         <div className="d-flex col-10 justify-content-between align-items-center">
-          {/* pendente - logo diminuindo bizarramente */}
-
           <IconLogoSC />
           <div
             className="gap-2 mobile"
@@ -64,11 +62,24 @@ const Navbar = () => {
                     backgroundColor: `${colors.five_color_violet_pink_BC6BFA_40}`,
                   }}
                 >
-                  <a href="#" outlined data-bs-toggle="modal" data-bs-target="#ModalContact">Entre em contato.</a>
+                  <a
+                    href="#"
+                    outlined
+                    data-bs-toggle="modal"
+                    data-bs-target="#ModalContact"
+                  >
+                    Entre em contato.
+                  </a>
                 </LiSC>
                 {/* pendente - ajutar cor da opção de quero ajudar no dropdown */}
                 <LiSC>
-                  <a href="#" data-bs-toggle="modal" data-bs-target="#ModalHowToHelp">Quero ajudar.</a>
+                  <a
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#ModalHowToHelp"
+                  >
+                    Quero ajudar.
+                  </a>
                 </LiSC>
                 <LiSC>
                   <a href="#">Como doar?</a>
@@ -87,13 +98,26 @@ const Navbar = () => {
           </div>
 
           <div className="d-flex gap-5 align-items-center desktop">
-            {/* pendente - Ao clicar em entre em contato, deve aparecer um modal */}
-            <ButtonSC outlined type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalContact">Entre em contato</ButtonSC>
+            <ButtonSC
+              outlined
+              type="button"
+              className="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalContact"
+            >
+              Entre em contato
+            </ButtonSC>
             {/* pendente - Ao clicar em entre em como ajudar, deve aparecer um modal com as formas de ajuda e apoio (seja pix, doação, patrocinio) */}
-            <ButtonSC type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#ModalHowToHelp">Quero ajudar</ButtonSC>
+            <ButtonSC
+              type="button"
+              className="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#ModalHowToHelp"
+            >
+              Quero ajudar
+            </ButtonSC>
           </div>
         </div>
-
       </NavbarSC>
     </>
   );
