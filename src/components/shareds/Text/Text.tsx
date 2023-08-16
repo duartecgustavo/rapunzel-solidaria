@@ -9,9 +9,18 @@ export interface ITextProps {
   family?: "Architects Daughter" | "Concert One";
   style?: React.CSSProperties;
   copy?: boolean;
+  textGap?: any;
 }
 
-const Text = ({ copy = false, children, color, size, align, family, style }: ITextProps) => {
+const Text = ({
+  copy = false,
+  children,
+  color,
+  size,
+  align,
+  family,
+  style,
+}: ITextProps) => {
   function copyToClipboard() {
     if (copy && children) {
       const textToCopy = children.toString();

@@ -67,20 +67,20 @@ export const TextSC = styled.p`
   }
 `;
 
-export const ButtonSC = styled.button<{ outlined?: boolean }>`
+export const ButtonSC = styled.button<{ isOutlined?: boolean }>`
   height: 35px;
   user-select: none;
   color: ${(props) =>
-    props.outlined
+    props.isOutlined
       ? colors.secondary_color_green_37B0CB
       : colors.primary_color_violet_A73AA7};
-  border-width: ${(props) => props.outlined && "0px"};
+  border-width: ${(props) => props.isOutlined && "0px"};
   font-weight: 700;
   border-radius: 17.5px;
   border: 2px solid transparent;
   padding: 0px 10px 0px 10px;
   background-color: ${(props) =>
-    props.outlined ? "transparent" : colors.secondary_color_green_37B0CB};
+    props.isOutlined ? "transparent" : colors.secondary_color_green_37B0CB};
 
   &.scroll-active {
     color: ${colors.seven_color_violet_dark_6E36B3};
@@ -88,14 +88,14 @@ export const ButtonSC = styled.button<{ outlined?: boolean }>`
 
   &:hover {
     background-color: ${(props) =>
-      props.outlined
+      props.isOutlined
         ? "transparent"
         : colors.secondary_color_green_light_6FBECF};
     color: ${(props) =>
-      props.outlined
+      props.isOutlined
         ? colors.secondary_color_green_light_6FBECF
         : colors.primary_color_violet_A73AA7};
-    border: ${(props) => props.outlined && "3px solid #6FBECF"};
+    border: ${(props) => props.isOutlined && "3px solid #6FBECF"};
   }
 `;
 

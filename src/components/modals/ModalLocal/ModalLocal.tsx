@@ -1,18 +1,20 @@
-import { BeautyTitle, SocialMidia, Text, TextMark } from "@/components/shareds";
+import { BeautyTitle, Text, TextMark } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 
-const ModalHowToHelp = () => {
+const ModalLocal = () => {
   return (
     <>
       <div
         className="modal fade"
-        id="ModalHowToHelp"
-
+        id="ModalLocal"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-centered mx-auto modal-lg" style={{ height: "100%" }}>
-          <div className="modal-content pb-5">
+        <div
+          className="modal-dialog modal-dialog-centered mx-auto modal-xl"
+          style={{ height: "100%" }}
+        >
+          <div className="modal-content">
             <div
               className="modal-header d-flex justify-content-end"
               style={{ borderBottom: "none" }}
@@ -24,7 +26,7 @@ const ModalHowToHelp = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body px-5">
+            <div className="modal-body pb-5">
               <div>
                 <BeautyTitle
                   FrontTitle="Onde estamos?"
@@ -36,7 +38,11 @@ const ModalHowToHelp = () => {
                   family="Architects Daughter"
                   size="18px"
                 >
-                  Você pode ajudar de 3 maneiras. Através de doação em dinheiro atrvés do pagamento via PIX, doação de cabelo ou patrocinando nossa causa.
+                  Rua Amaro Cavalheiro, 140 - Pinheiros -{" "}
+                  <TextMark color="Yellow" family="Architects Daughter">
+                    {" "}
+                    De terça a sábado das 10h às 17h.{" "}
+                  </TextMark>
                 </Text>
               </div>
               <div className="mt-3">
@@ -47,54 +53,31 @@ const ModalHowToHelp = () => {
                   family="Concert One"
                   style={{ display: "flex", justifyContent: "center" }}
                 >
-                  PIX
-                </Text>
-                <Text
-                  style={{ display: "flex", justifyContent: "center" }}
-                  family="Architects Daughter"
-                  size="18px"
-                  copy={true}
-                  color={colors.black_transparent_80}
-                >
-                  33776098000122
-                </Text>
-              </div>
-              <div className="mt-3">
-                <Text
-                  size="24px"
-                  color={colors.five_color_violet_pink_BC6BFA}
-                  align="left"
-                  family="Concert One"
-                  style={{ display: "flex", justifyContent: "center" }}
-                >
-                  DOE CABELO
+                  Pontos de coleta!
                 </Text>
                 <Text
                   style={{ display: "flex", justifyContent: "center" }}
                   family="Architects Daughter"
                   size="18px"
                 >
-                  Confira a sessão de <TextMark>COMO DOAR?</TextMark>
-                </Text>
-              </div>
-              <div className="mt-3">
-                <Text
-                  size="24px"
-                  color={colors.five_color_violet_pink_BC6BFA}
-                  align="left"
-                  family="Concert One"
-                  style={{ display: "flex", justifyContent: "center" }}
-                >
-                  Fale direto conosco!
+                  HOSPITAL ITACI - Rua Galeno de Almeida, 148 - Pinheiros - De
+                  segunda a sexta das 7h às 17h.
                 </Text>
                 <Text
                   style={{ display: "flex", justifyContent: "center" }}
                   family="Architects Daughter"
                   size="18px"
                 >
-                  <SocialMidia contact="whatsapp" copy={true} color={colors.black_transparent_80} />
-                  <SocialMidia contact="phone" copy={true} color={colors.black_transparent_80} />
-                  <SocialMidia contact="instagram" copy={true} color={colors.black_transparent_80} />
+                  ESCOLA PROJETO APRENDER - Rua Luos Góis, 1832 - Vila
+                  Clementino - De segunda a sexta das 8h às 17h.
+                </Text>
+                <Text
+                  style={{ display: "flex", justifyContent: "center" }}
+                  family="Architects Daughter"
+                  size="18px"
+                >
+                  GRUPO ATITUDE - Av. Dom Pedro II, 1240 - Santo André - De
+                  terça a sábado das 8h às 17h.
                 </Text>
               </div>
             </div>
@@ -105,4 +88,4 @@ const ModalHowToHelp = () => {
   );
 };
 
-export default ModalHowToHelp;
+export default ModalLocal;

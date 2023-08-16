@@ -1,10 +1,12 @@
-import { ModalContact, ModalHowToHelp } from "@/components/modals";
+import { ModalContact, ModalLocal } from "@/components/modals";
 
 const Modals = () => {
-    return (<>
-        <ModalContact />
-        <ModalHowToHelp />
-    </>)
-}
+  return (
+    <>
+      <ModalContact />
+      <ModalLocal />
+    </>
+  );
+};
 
 export default Modals;

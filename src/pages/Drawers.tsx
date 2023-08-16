@@ -1,12 +1,12 @@
-import { DrawerContact, DrawerHowToHelp } from "@/components/drawers";
+import { DrawerContact, DrawerLocal } from "@/components/drawers";
 
 const Drawers = () => {
-    return (<>
-        {/* pendente - Ajustar Drawer */}
-        <DrawerContact />
-        {/* pendente - Ajustar Drawer */}
-        <DrawerHowToHelp />
-    </>)
-}
+  return (
+    <>
+      <DrawerContact />
+      <DrawerLocal />
+    </>
+  );
+};
 
 export default Drawers;

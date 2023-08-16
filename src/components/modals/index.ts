@@ -1,2 +1,2 @@
 export { default as ModalContact } from "./ModalContact/ModalContact";
-export { default as ModalHowToHelp } from "./ModalHowToHelp/ModalHowToHelp";
+export { default as ModalLocal } from "./ModalLocal/ModalLocal";

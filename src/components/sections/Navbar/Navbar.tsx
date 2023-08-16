@@ -1,13 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import { useEffect, useRef, useState } from "react";
 import Dropdown from "./Dropdown";
-import {
-  ButtonSC,
-  IconLogoSC,
-  IconMenuSC,
-  NavbarSC,
-  TextSC
-} from "./styles";
+import { ButtonSC, IconLogoSC, IconMenuSC, NavbarSC, TextSC } from "./styles";
 
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
@@ -32,9 +26,11 @@ const Navbar = () => {
 
   window.addEventListener("scroll", () => {
     const header: any = document.querySelector("#header-top");
-    const headertopbuttonhowtohelp: any = document.querySelector("#header-top-button-how-to-help");
+    const headertopbuttonLocal: any = document.querySelector(
+      "#header-top-button-how-to-help"
+    );
     header.classList.toggle("scroll-active", window.scrollY > 60);
-    headertopbuttonhowtohelp.classList.toggle("scroll-active", window.scrollY > 60);
+    headertopbuttonLocal.classList.toggle("scroll-active", window.scrollY > 60);
   });
 
   return (
@@ -53,27 +49,25 @@ const Navbar = () => {
           >
             <TextSC>MENU</TextSC>
             <IconMenuSC />
-            {dropdown && (
-              <Dropdown />
-            )}
+            {dropdown && <Dropdown />}
           </div>
 
           <div className="d-flex gap-5 align-items-center desktop">
             <ButtonSC
-              outlined
+              isOutlined={true}
               type="button"
               data-bs-toggle="modal"
-              data-bs-target="#ModalContact"
+              data-bs-target="#ModalLocal"
             >
-              Entre em contato
+              Onde estamos?
             </ButtonSC>
             <ButtonSC
               type="button"
               data-bs-toggle="modal"
-              data-bs-target="#ModalHowToHelp"
+              data-bs-target="#ModalContact"
               id="header-top-button-how-to-help"
             >
-              Quero ajudar
+              Quero ajudar 🥰
             </ButtonSC>
           </div>
         </div>
