@@ -6,9 +6,10 @@ export const TextSC = styled.p<ITextProps>`
   color: ${(props) => props.color || "black"};
   text-align: ${(props) => props.align || "center"};
   font-family: ${(props) => `${props.family} !important`};
+  gap: ${(props) => props.textGap || "0px"};
   cursor: cell;
   user-select: none;
-  margin-top: ${(props) => `${props.marginTop} !important`};
+  align-items: center;
 
   @media (max-width: 768px) {
     text-align: center !important;

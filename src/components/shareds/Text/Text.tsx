@@ -1,3 +1,4 @@
+import { CopySvgSC } from "../SocialMidia/styles";
 import { TextSC } from "./styles";
 
 export interface ITextProps {
@@ -7,9 +8,16 @@ export interface ITextProps {
   align?: "left" | "center" | "right";
   family?: "Architects Daughter" | "Concert One";
   style?: React.CSSProperties;
+  copy?: boolean;
 }
 
-const Text = ({ children, color, size, align, family, style }: ITextProps) => {
+const Text = ({ copy = false, children, color, size, align, family, style }: ITextProps) => {
+  function copyToClipboard() {
+    if (copy && children) {
+      const textToCopy = children.toString();
+      navigator.clipboard.writeText(textToCopy);
+    }
+  }
   return (
     <>
       <TextSC
@@ -18,8 +26,11 @@ const Text = ({ children, color, size, align, family, style }: ITextProps) => {
         align={align}
         family={family}
         style={style}
+        onClick={copyToClipboard}
+        textGap={copy && "4px"}
       >
         {children}
+        {copy && <CopySvgSC color={color && color} />}
       </TextSC>
     </>
   );

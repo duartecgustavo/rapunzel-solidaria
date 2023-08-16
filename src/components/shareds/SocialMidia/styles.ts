@@ -6,6 +6,7 @@ import { ReactComponent as WhatsApp } from "@/assets/icon-whatsApp.svg";
 import { ReactComponent as Youtube } from "@/assets/icon-youtube.svg";
 import { ReactComponent as Phone } from "@/assets/icon-phone.svg";
 import { ReactComponent as Copy } from "@/assets/icon-copy.svg";
+import { colors } from "@/styles/colors";
 
 export const SocialMidiaSC = styled.div`
   display: flex;
@@ -18,7 +19,9 @@ export const SocialMidiaSC = styled.div`
   cursor: cell;
 `;
 
-export const CopySvgSC = styled(Copy)``;
+export const CopySvgSC = styled(Copy)`
+  stroke: ${(props) => (props.color ? props.color : colors.white_FFFFFF)};
+`;
 export const EmailSvgSC = styled(Email)``;
 export const FacebookSvgSC = styled(Facebook)``;
 export const InstagramSvgSC = styled(Instagram)``;

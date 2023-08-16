@@ -7,11 +7,11 @@ const ModalHowToHelp = () => {
       <div
         className="modal fade"
         id="ModalHowToHelp"
-        tabindex="-1"
+
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-centered mx-auto modal-lg">
+        <div className="modal-dialog modal-dialog-centered mx-auto modal-lg" style={{ height: "100%" }}>
           <div className="modal-content pb-5">
             <div
               className="modal-header d-flex justify-content-end"
@@ -24,7 +24,7 @@ const ModalHowToHelp = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">
+            <div className="modal-body px-5">
               <div>
                 <BeautyTitle
                   FrontTitle="Onde estamos?"
@@ -36,19 +36,7 @@ const ModalHowToHelp = () => {
                   family="Architects Daughter"
                   size="18px"
                 >
-                  Você pode ajudar de 3 maneiras. Através de doação em dinheiro
-                  por nossa causa.
-                  <TextMark color="Yellow" family="Architects Daughter">
-                    PIX
-                  </TextMark>
-                  ,
-                  <TextMark color="Yellow" family="Architects Daughter">
-                    doação de cabelo
-                  </TextMark>
-                  ou
-                  <TextMark color="Yellow" family="Architects Daughter">
-                    patrocinando
-                  </TextMark>
+                  Você pode ajudar de 3 maneiras. Através de doação em dinheiro atrvés do pagamento via PIX, doação de cabelo ou patrocinando nossa causa.
                 </Text>
               </div>
               <div className="mt-3">
@@ -65,6 +53,8 @@ const ModalHowToHelp = () => {
                   style={{ display: "flex", justifyContent: "center" }}
                   family="Architects Daughter"
                   size="18px"
+                  copy={true}
+                  color={colors.black_transparent_80}
                 >
                   33776098000122
                 </Text>
@@ -84,7 +74,7 @@ const ModalHowToHelp = () => {
                   family="Architects Daughter"
                   size="18px"
                 >
-                  Confira a sessão de COMO DOAR?
+                  Confira a sessão de <TextMark>COMO DOAR?</TextMark>
                 </Text>
               </div>
               <div className="mt-3">
@@ -102,9 +92,9 @@ const ModalHowToHelp = () => {
                   family="Architects Daughter"
                   size="18px"
                 >
-                  <SocialMidia contact="whatsapp" />
-                  <SocialMidia contact="phone" />
-                  <SocialMidia contact="instagram" copy={true} />
+                  <SocialMidia contact="whatsapp" copy={true} color={colors.black_transparent_80} />
+                  <SocialMidia contact="phone" copy={true} color={colors.black_transparent_80} />
+                  <SocialMidia contact="instagram" copy={true} color={colors.black_transparent_80} />
                 </Text>
               </div>
             </div>

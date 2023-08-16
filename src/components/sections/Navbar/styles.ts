@@ -82,6 +82,10 @@ export const ButtonSC = styled.button<{ outlined?: boolean }>`
   background-color: ${(props) =>
     props.outlined ? "transparent" : colors.secondary_color_green_37B0CB};
 
+  &.scroll-active {
+    color: ${colors.seven_color_violet_dark_6E36B3};
+  }
+
   &:hover {
     background-color: ${(props) =>
       props.outlined

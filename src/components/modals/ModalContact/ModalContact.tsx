@@ -7,12 +7,11 @@ const ModalContact = () => {
       <div
         className="modal fade"
         id="ModalContact"
-        tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-dialog-centered mx-auto modal-xl">
-          <div className="modal-content pb-5">
+        <div className="modal-dialog modal-dialog-centered mx-auto modal-xl" style={{ height: "100%" }}>
+          <div className="modal-content">
             <div
               className="modal-header d-flex justify-content-end"
               style={{ borderBottom: "none" }}
@@ -24,7 +23,7 @@ const ModalContact = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body">
+            <div className="modal-body pb-5">
               <div>
                 <BeautyTitle
                   FrontTitle="Quero ajudar!"

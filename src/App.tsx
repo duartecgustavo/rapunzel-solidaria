@@ -4,6 +4,7 @@ import { Container } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 import PrimaryPage from "@/pages/PrimaryPage";
 import Modals from "@/pages/Modals";
+import Drawers from "@/pages/Drawers";
 
 // pendente - FIGMA, Criar prototipo mobile
 
@@ -11,6 +12,7 @@ function App() {
   return (
     <>
       <Navbar />
+
       <Container background={colors.primary_color_violet_A73AA7} mobile={false}>
         <PrimaryPage />
       </Container>
@@ -31,6 +33,7 @@ function App() {
       </Container>
       <Footer />
       <Modals />
+      <Drawers />
     </>
   );
 }

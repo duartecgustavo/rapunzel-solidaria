@@ -11,20 +11,20 @@ import {
   SocialMidiaSC,
 } from "./styles";
 import { socialMediaStrings } from "../../../constants/strings.ts";
-import { useState } from "react";
 
 interface ISocialMidiaProps {
   copy?: boolean;
   contact:
-    | "whatsapp"
-    | "youtube"
-    | "email"
-    | "facebook"
-    | "phone"
-    | "instagram";
+  | "whatsapp"
+  | "youtube"
+  | "email"
+  | "facebook"
+  | "phone"
+  | "instagram";
+  color?: string;
 }
 
-const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
+const SocialMidia = ({ copy = false, contact, color }: ISocialMidiaProps) => {
   function copyToClipboard() {
     if (copy) {
       const contactText = socialMediaStrings[contact.toUpperCase().toString()];
@@ -43,7 +43,7 @@ const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
             <Text
               size="16px"
               family="Architects Daughter"
-              color={colors.white_FFFFFF}
+              color={color ? color : colors.white_FFFFFF}
             >
               {contactText}
             </Text>
@@ -57,7 +57,7 @@ const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
             <Text
               size="16px"
               family="Architects Daughter"
-              color={colors.white_FFFFFF}
+              color={color ? color : colors.white_FFFFFF}
             >
               {contactText}
             </Text>
@@ -71,7 +71,7 @@ const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
             <Text
               size="16px"
               family="Architects Daughter"
-              color={colors.white_FFFFFF}
+              color={color ? color : colors.white_FFFFFF}
             >
               {contactText}
             </Text>
@@ -85,7 +85,7 @@ const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
             <Text
               size="16px"
               family="Architects Daughter"
-              color={colors.white_FFFFFF}
+              color={color ? color : colors.white_FFFFFF}
             >
               {contactText}
             </Text>
@@ -99,7 +99,7 @@ const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
             <Text
               size="16px"
               family="Architects Daughter"
-              color={colors.white_FFFFFF}
+              color={color ? color : colors.white_FFFFFF}
             >
               {contactText}
             </Text>
@@ -113,7 +113,7 @@ const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
             <Text
               size="16px"
               family="Architects Daughter"
-              color={colors.white_FFFFFF}
+              color={color ? color : colors.white_FFFFFF}
             >
               {contactText}
             </Text>
@@ -127,7 +127,7 @@ const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
             <Text
               size="16px"
               family="Architects Daughter"
-              color={colors.white_FFFFFF}
+              color={color ? color : colors.white_FFFFFF}
             >
               {contactText}
             </Text>
@@ -140,7 +140,7 @@ const SocialMidia = ({ copy = false, contact }: ISocialMidiaProps) => {
     <>
       <SocialMidiaSC onClick={copyToClipboard}>
         {SwitchContact()}
-        {copy && <CopySvgSC />}
+        {copy && <CopySvgSC color={color && color} />}
       </SocialMidiaSC>
     </>
   );
