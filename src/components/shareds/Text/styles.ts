@@ -6,7 +6,7 @@ export const TextSC = styled.p<ITextProps>`
   color: ${(props) => props.color || "black"};
   text-align: ${(props) => props.align || "center"};
   font-family: ${(props) => `${props.family} !important`};
-  gap: ${(props) => props.textGap || "0px"};
+  gap: ${(props) => props.textgap || "0px"};
   cursor: cell;
   user-select: none;
   align-items: center;

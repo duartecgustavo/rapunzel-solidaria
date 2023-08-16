@@ -54,7 +54,7 @@ const Navbar = () => {
 
           <div className="d-flex gap-5 align-items-center desktop">
             <ButtonSC
-              isOutlined={true}
+              isoutlined="true"
               type="button"
               data-bs-toggle="modal"
               data-bs-target="#ModalLocal"

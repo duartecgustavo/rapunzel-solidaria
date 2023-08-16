@@ -13,7 +13,10 @@ function App() {
     <>
       <Navbar />
 
-      <Container background={colors.primary_color_violet_A73AA7} mobile={false}>
+      <Container
+        background={colors.primary_color_violet_A73AA7}
+        ismobile="false"
+      >
         <PrimaryPage />
       </Container>
       <Container background="red" height="10vh">

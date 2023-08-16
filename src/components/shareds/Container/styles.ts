@@ -10,6 +10,6 @@ export const ContainerSC = styled.div<IContainerProps>`
 
   @media (max-width: 768px) {
     height: auto;
-    display: ${(props) => (props.mobile ? "flex" : "none")};
+    display: ${(props) => (Boolean(!props.ismobile) ? "flex" : "none")};
   }
 `;

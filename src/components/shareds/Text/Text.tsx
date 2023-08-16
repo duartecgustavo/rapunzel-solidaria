@@ -9,7 +9,7 @@ export interface ITextProps {
   family?: "Architects Daughter" | "Concert One";
   style?: React.CSSProperties;
   copy?: boolean;
-  textGap?: any;
+  textgap?: any;
 }
 
 const Text = ({
@@ -36,7 +36,7 @@ const Text = ({
         family={family}
         style={style}
         onClick={copyToClipboard}
-        textGap={copy && "4px"}
+        textgap={copy ? "4px" : undefined}
       >
         {children}
         {copy && <CopySvgSC color={color && color} />}

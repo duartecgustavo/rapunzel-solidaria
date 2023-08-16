@@ -91,11 +91,7 @@ const ModalContact = () => {
                 >
                   Fale direto conosco!
                 </Text>
-                <Text
-                  style={{ display: "flex", justifyContent: "center" }}
-                  family="Architects Daughter"
-                  size="18px"
-                >
+                <div style={{ display: "flex", justifyContent: "center" }}>
                   <SocialMidia
                     contact="whatsapp"
                     copy={true}
@@ -111,7 +107,7 @@ const ModalContact = () => {
                     copy={true}
                     color={colors.black_transparent_80}
                   />
-                </Text>
+                </div>
               </div>
             </div>
           </div>

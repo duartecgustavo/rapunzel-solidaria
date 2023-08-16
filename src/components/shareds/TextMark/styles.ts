@@ -2,7 +2,7 @@ import { colors } from "@/styles/colors";
 import styled from "styled-components";
 import { ITextMarkProps } from "./TextMark";
 
-export const TextMarkSC = styled.div<ITextMarkProps>`
+export const TextMarkSC = styled.span<ITextMarkProps>`
   display: flex;
   align-items: center;
 

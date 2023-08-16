@@ -8,9 +8,11 @@ export interface ITextMarkProps {
 
 const Text = ({ children, color, family }: ITextMarkProps) => {
   return (
-    <TextMarkSC color={color} family={family}>
-      {children}
-    </TextMarkSC>
+    <>
+      <TextMarkSC color={color} family={family}>
+        {children}
+      </TextMarkSC>
+    </>
   );
 };
 
