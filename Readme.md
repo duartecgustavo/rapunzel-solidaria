@@ -19,7 +19,7 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 ### Links
 
-- Rapunzel Solidária [NOVO] - [link_para_o_site]([https://www.google.com.br](https://rapunzel-solidaria.vercel.app/))
+- Rapunzel Solidária [NOVO] - [link_para_o_site](https://rapunzel-solidaria.vercel.app/)
 
 - Figma - [link_para_o_figma](https://www.google.com.br)
 
