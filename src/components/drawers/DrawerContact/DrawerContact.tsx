@@ -81,7 +81,13 @@ const DrawerContact = () => {
             >
               Fale direto conosco!
             </Text>
-            <div style={{ display: "flex", justifyContent: "center" }}>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
               <SocialMidia
                 contact="whatsapp"
                 copy={true}

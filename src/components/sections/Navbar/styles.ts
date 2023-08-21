@@ -113,7 +113,7 @@ export const UlSC = styled.ul`
   border-radius: 8px;
 `;
 export const LiSC = styled.ul`
-  padding: 3px 8px 3px 8px;
+  padding: 14px 22px 14px 22px;
 
   & > a:hover {
     cursor: pointer;

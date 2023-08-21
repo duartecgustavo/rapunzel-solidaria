@@ -36,7 +36,7 @@ const GirlCardLinkToSection = ({
   };
 
   return (
-    <ContainerGirlCardLinkToSection className="col-10 col-sm-6 col-md-4 col-lg-4 	col-xl-2">
+    <ContainerGirlCardLinkToSection className="col-10 col-sm-6 col-md-4 col-lg-4 col-xl-2">
       {GetSvgGirl(GirlName)}
       <TextLink>{TxtLink}</TextLink>
     </ContainerGirlCardLinkToSection>

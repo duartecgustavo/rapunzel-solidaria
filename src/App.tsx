@@ -2,7 +2,7 @@ import "@/App.css";
 import { Footer, Navbar } from "@/components/sections";
 import { Container } from "@/components/shareds";
 import { colors } from "@/styles/colors";
-import PrimaryPage from "@/pages/PrimaryPage";
+import { PrimaryPage, WhoWeArePage } from "@/pages";
 import Modals from "@/pages/Modals";
 import Drawers from "@/pages/Drawers";
 
@@ -19,8 +19,8 @@ function App() {
       >
         <PrimaryPage />
       </Container>
-      <Container background="red" height="10vh">
-        <div className="col-10">QUEM SOMOS</div>
+      <Container background={colors.white_FFFFFF}>
+        <WhoWeArePage />
       </Container>
       <Container background="green" height="10vh">
         <div className="col-10">COMO DOAR</div>

@@ -21,7 +21,7 @@ const DrawerLocal = () => {
           <div>
             <BeautyTitle
               FrontTitle="Onde estamos?"
-              BackTitle="AGORA"
+              BackTitle="LOCAL"
               Color="Violet"
             />
             <Text

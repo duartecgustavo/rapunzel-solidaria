@@ -14,5 +14,6 @@ export const TextSC = styled.p<ITextProps>`
   @media (max-width: 768px) {
     text-align: center !important;
     flex-direction: column !important;
+    font-size: 18px;
   }
 `;
