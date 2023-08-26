@@ -1,6 +1,6 @@
 import "@/App.css";
-import { Footer, Navbar } from "@/components/sections";
-import { Container } from "@/components/shareds";
+import { Footer, HowToDonate, Navbar } from "@/components/sections";
+import { BeautyTitle, Container } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 import { PrimaryPage, WhoWeArePage } from "@/pages";
 import Modals from "@/pages/Modals";
@@ -19,20 +19,32 @@ function App() {
       >
         <PrimaryPage />
       </Container>
-      <Container background={colors.white_FFFFFF}>
+      <Container background={colors.white_FFFFFF} height="auto">
         <WhoWeArePage />
       </Container>
-      <Container background="green" height="10vh">
-        <div className="col-10">COMO DOAR</div>
+      <Container background={colors.third_color_violet_blue_6F66BA} height="25vh">
+        <HowToDonate />
       </Container>
-      <Container background="blue" height="10vh">
-        <div className="col-10">COMO RECEBER</div>
+      <Container background={colors.five_color_violet_pink_BC6BFA} height="25vh">
+        <BeautyTitle
+          FrontTitle="Como receber?"
+          BackTitle="RECEBER"
+          Color="White"
+        />
       </Container>
-      <Container background="violet" height="10vh">
-        <div className="col-10">APOIADORES</div>
+      <Container background={colors.white_FFFFFF} height="25vh">
+        <BeautyTitle
+          FrontTitle="Apoiadores"
+          BackTitle="AJUDE"
+          Color="Violet"
+        />
       </Container>
-      <Container background="orange" height="10vh">
-        <div className="col-10">DEPOIMENTOS</div>
+      <Container background={colors.six_color_orange_C18151} height="25vh">
+        <BeautyTitle
+          FrontTitle="Depoimentos"
+          BackTitle="FALE!"
+          Color="White"
+        />
       </Container>
       <Footer />
       <Modals />

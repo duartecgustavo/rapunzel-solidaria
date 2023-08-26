@@ -17,7 +17,7 @@ const WhoWeArePage = () => {
             size="22px"
           >
             Somos uma Organização sem Fins Econômicos, chamada Associação
-            Rapunzel Solidária,.
+            Rapunzel Solidária.
           </Text>
           <Text
             style={{ display: "flex", justifyContent: "center" }}
