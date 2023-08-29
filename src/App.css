@@ -29,3 +29,34 @@ a:hover {
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
+/* Estilo scroll bar navegador */
+
+body::-webkit-scrollbar {
+  width: 12px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(184, 184, 184); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(116, 116, 116);
+  border: 3px solid rgb(116, 116, 116);
+}
+
+/* Estilo scroll bar caixas de texto menores */
+
+.textScroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.textScroll::-webkit-scrollbar-track {
+  background-color: rgb(116, 116, 116);
+  width: 2px;
+}
+
+.textScroll::-webkit-scrollbar-thumb {
+  background-color: #e1ff26;
+  border: 3px solid #e1ff26;
+}

@@ -10,7 +10,7 @@ interface IBeautyTitle {
 
 const BeautyTitle = ({ FrontTitle, BackTitle, Color }: IBeautyTitle) => {
   return (
-    <ContainerTitleSC>
+    <ContainerTitleSC className="my-5">
       <FrontTitleSC color={Color}>{FrontTitle}</FrontTitleSC>
       <BackTitleSC color={Color}>{BackTitle}</BackTitleSC>
     </ContainerTitleSC>

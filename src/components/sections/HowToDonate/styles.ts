@@ -5,44 +5,38 @@ export const DonateCardSC = styled.div`
   display: flex;
   flex-direction: column;
   width: 300px;
-  gap: 50px;
 
-  position: relative;
+  align-items: center;
 `;
-// export const CardStepImg = styled.div`
-//   width: 300px;
-//   height: 230px;
-//   background-color: #c2d7ea;
-//   border-radius: 10px 10px 0px 0px;
 
-//   padding: 20px;
-// `;
 export const CardStepImg = styled.img`
+  position: relative;
   width: 300px;
   height: 230px;
-  border-radius: 10px 10px 0px 0px;
-
-  padding: 20px;
 `;
 export const CardStepText = styled.div`
-  width: 300px;
-  background-color: ${colors.white_transparent_20};
-  border-radius: 0px 0px 10px 10px;
-
+  width: 290px;
+  background-color: ${colors.white_transparent_70};
+  border-radius: 10px;
+  height: 130px;
   padding: 20px;
+  position: relative;
+  overflow-y: auto;
 `;
+
 export const BoxRoundedNumberSC = styled.div`
   width: 60px;
   height: 60px;
   border: 4px solid ${colors.four_color_yellow_E1FF26};
   border-radius: 50%;
-  background-color: ${colors.white_transparent_10};
+  background-color: ${colors.black_transparent_25};
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: absolute;
-  top: -8%;
-  left: -1%;
+  z-index: 1;
+  top: -13%;
+  left: -8%;
 `;

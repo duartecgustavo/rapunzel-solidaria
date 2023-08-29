@@ -12,12 +12,12 @@ const CardDonate = ({ img, text, number }: ICardDonateProps) => {
   return (
     <>
       <DonateCardSC>
-        <CardNumber number={number} />
-        {/* <CardStepImg>
-          <img src={img} alt="" />
-        </CardStepImg> */}
-        <CardStepImg src={img} alt="" />
-        <CardStepText>
+        <div style={{ position: "relative" }}>
+          <CardNumber number={number} />
+
+          <CardStepImg src={img} alt="" />
+        </div>
+        <CardStepText className="textScroll">
           <Text family="Architects Daughter" size="18px">
             {text}
           </Text>
