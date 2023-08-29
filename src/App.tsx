@@ -22,10 +22,16 @@ function App() {
       <Container background={colors.white_FFFFFF} height="auto">
         <WhoWeArePage />
       </Container>
-      <Container background={colors.third_color_violet_blue_6F66BA} height="25vh">
+      <Container
+        background={colors.third_color_violet_blue_6F66BA}
+        height="auto"
+      >
         <HowToDonate />
       </Container>
-      <Container background={colors.five_color_violet_pink_BC6BFA} height="25vh">
+      <Container
+        background={colors.five_color_violet_pink_BC6BFA}
+        height="25vh"
+      >
         <BeautyTitle
           FrontTitle="Como receber?"
           BackTitle="RECEBER"
@@ -33,18 +39,10 @@ function App() {
         />
       </Container>
       <Container background={colors.white_FFFFFF} height="25vh">
-        <BeautyTitle
-          FrontTitle="Apoiadores"
-          BackTitle="AJUDE"
-          Color="Violet"
-        />
+        <BeautyTitle FrontTitle="Apoiadores" BackTitle="AJUDE" Color="Violet" />
       </Container>
       <Container background={colors.six_color_orange_C18151} height="25vh">
-        <BeautyTitle
-          FrontTitle="Depoimentos"
-          BackTitle="FALE!"
-          Color="White"
-        />
+        <BeautyTitle FrontTitle="Depoimentos" BackTitle="FALE!" Color="White" />
       </Container>
       <Footer />
       <Modals />

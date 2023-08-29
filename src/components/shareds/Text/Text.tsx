@@ -6,7 +6,7 @@ export interface ITextProps {
   color?: string;
   size?: string;
   align?: "left" | "center" | "right";
-  family?: "Architects Daughter" | "Concert One";
+  family?: "Architects Daughter" | "Concert One" | "Arbutus";
   style?: React.CSSProperties;
   copy?: boolean;
   textgap?: any;
