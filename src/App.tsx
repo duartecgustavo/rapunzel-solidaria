@@ -1,10 +1,8 @@
 import "@/App.css";
-import { Footer, HowToDonate, Navbar } from "@/components/sections";
+import { Footer, Navbar } from "@/components/sections";
 import { BeautyTitle, Container } from "@/components/shareds";
 import { colors } from "@/styles/colors";
-import { PrimaryPage, WhoWeArePage } from "@/pages";
-import Modals from "@/pages/Modals";
-import Drawers from "@/pages/Drawers";
+import { PrimaryPage, WhoWeArePage, HowToReceivePage, HowToDonatePage, Modals, Drawers } from "@/pages";
 
 // pendente - FIGMA, Criar prototipo mobile
 
@@ -26,17 +24,13 @@ function App() {
         background={colors.third_color_violet_blue_6F66BA}
         height="auto"
       >
-        <HowToDonate />
+        <HowToDonatePage />
       </Container>
       <Container
         background={colors.five_color_violet_pink_BC6BFA}
-        height="25vh"
+        height="auto"
       >
-        <BeautyTitle
-          FrontTitle="Como receber?"
-          BackTitle="RECEBER"
-          Color="White"
-        />
+        <HowToReceivePage />
       </Container>
       <Container background={colors.white_FFFFFF} height="25vh">
         <BeautyTitle FrontTitle="Apoiadores" BackTitle="AJUDE" Color="Violet" />

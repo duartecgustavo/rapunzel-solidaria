@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { ITextMarkProps } from "./TextMark";
 
 export const TextMarkSC = styled.span<ITextMarkProps>`
-  display: flex;
+  display: ${(props) => props.display};
   align-items: center;
 
   height: 24px;
