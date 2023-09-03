@@ -30,5 +30,14 @@ export const FormLinkSC = styled.a`
   }
 `;
 
-export const MailmanScgSC = styled(Mailman)``;
-export const LinkScgSC = styled(Link)``;
+export const MailmanScgSC = styled(Mailman)`
+  @media (max-width: 768px) {
+    height: 180px;
+    margin-top: 0px !important;
+  }
+`;
+export const LinkScgSC = styled(Link)`
+  @media (max-width: 768px) {
+    width: 60px;
+  }
+`;

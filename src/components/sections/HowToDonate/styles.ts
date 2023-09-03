@@ -39,4 +39,12 @@ export const BoxRoundedNumberSC = styled.div`
   z-index: 1;
   top: -13%;
   left: -8%;
+
+  @media (max-width: 768px) {
+    width: 40px;
+    height: 40px;
+    top: -9%;
+    left: -5%;
+    border: 3px solid ${colors.four_color_yellow_E1FF26};
+  }
 `;

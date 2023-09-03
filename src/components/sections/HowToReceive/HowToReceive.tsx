@@ -1,6 +1,14 @@
 import { BeautyTitle, Text, TextMark } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 import { MailmanScgSC, LinkScgSC, FormLinkSC } from "./styles";
+import { styled } from "styled-components";
+
+const ContainerTextsSC = styled.div`
+    gap: 56px;
+    @media (max-width: 768px) {
+        gap: 16px;
+    }
+`;
 
 const HowToReceive = () => {
     return (<>
@@ -9,7 +17,7 @@ const HowToReceive = () => {
             BackTitle="RECEBER"
             Color="White"
         />
-        <div className="row justify-content-center gap-5 col-10 col-sm-8">
+        <ContainerTextsSC className="row justify-content-center col-10 col-sm-8">
             <Text
                 size="28px"
                 color={colors.white_FFFFFF}
@@ -65,7 +73,7 @@ const HowToReceive = () => {
                 Por favor, envie uma foto sua <TextMark color="White">antes e depois</TextMark> do tratamento para que possamos te mandar uma peruca que combine com você e te deixe ainda mais linda !
             </Text>
             <MailmanScgSC className="mt-5" />
-        </div>
+        </ContainerTextsSC>
     </>)
 }
 
