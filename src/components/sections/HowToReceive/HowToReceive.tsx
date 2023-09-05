@@ -36,15 +36,15 @@ const HowToReceive = () => {
                 Para receber uma peruca em sua casa basta <TextMark color="White">clicar no LINK abaixo.</TextMark>
             </Text>
             <FormLinkSC href="https://goo.gl/forms/YGswl9CjtxW0oRTJ2" target="_blanck">
-                <LinkScgSC />
                 <Text
                     family="Concert One"
-                    size="56px"
+                    size="36px"
                     color={colors.white_transparent_70}
                     style={{ cursor: "pointer" }}
                 >
                     CLIQUE AQUI
                 </Text>
+                <LinkScgSC />
             </FormLinkSC>
 
             <Text
@@ -72,7 +72,7 @@ const HowToReceive = () => {
             >
                 Por favor, envie uma foto sua <TextMark color="White">antes e depois</TextMark> do tratamento para que possamos te mandar uma peruca que combine com você e te deixe ainda mais linda !
             </Text>
-            <MailmanScgSC className="mt-5" />
+            <MailmanScgSC className="mt-2" />
         </ContainerTextsSC>
     </>)
 }

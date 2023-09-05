@@ -2,7 +2,7 @@ import "@/App.css";
 import { Footer, Navbar } from "@/components/sections";
 import { BeautyTitle, Container } from "@/components/shareds";
 import { colors } from "@/styles/colors";
-import { PrimaryPage, WhoWeArePage, HowToReceivePage, HowToDonatePage, Modals, Drawers } from "@/pages";
+import { PrimaryPage, WhoWeArePage, HowToReceivePage, HowToDonatePage, Modals, Drawers, DepositionsPage } from "@/pages";
 
 // pendente - FIGMA, Criar prototipo mobile
 
@@ -35,8 +35,8 @@ function App() {
       <Container background={colors.white_FFFFFF} height="25vh">
         <BeautyTitle FrontTitle="Apoiadores" BackTitle="AJUDE" Color="Violet" />
       </Container>
-      <Container background={colors.six_color_orange_C18151} height="25vh">
-        <BeautyTitle FrontTitle="Depoimentos" BackTitle="FALE!" Color="White" />
+      <Container background={colors.six_color_orange_C18151} height="auto">
+        <DepositionsPage />
       </Container>
       <Footer />
       <Modals />

@@ -5,7 +5,7 @@ import styled from "styled-components";
 
 export const NavbarSC = styled.div`
   width: 100%;
-  height: 120px;
+  height: 90px;
 
   position: fixed;
 
@@ -39,7 +39,7 @@ export const NavbarSC = styled.div`
 
 export const IconLogoSC = styled(IconLogoRapunzelSolidaria)`
   width: 180px;
-  height: 100px;
+  height: 70px;
 
   &:hover {
     cursor: pointer;
@@ -68,7 +68,7 @@ export const TextSC = styled.p`
 `;
 
 export const ButtonSC = styled.button<{ isoutlined?: any }>`
-  height: 35px;
+  font-size: 22px;
   user-select: none;
   color: ${(props) =>
     props.isoutlined
@@ -76,9 +76,9 @@ export const ButtonSC = styled.button<{ isoutlined?: any }>`
       : colors.primary_color_violet_A73AA7};
   border-width: ${(props) => props.isoutlined && "0px"};
   font-weight: 700;
-  border-radius: 17.5px;
+  border-radius: 30px;
   border: 2px solid transparent;
-  padding: 0px 10px 0px 10px;
+  padding: 0px 14px 0px 14px;
   background-color: ${(props) =>
     props.isoutlined ? "transparent" : colors.secondary_color_green_37B0CB};
 

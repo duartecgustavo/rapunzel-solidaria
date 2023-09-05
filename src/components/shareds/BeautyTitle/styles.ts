@@ -15,7 +15,7 @@ export const FrontTitleSC = styled.p`
   font-weight: bold;
   position: absolute;
   z-index: 1;
-  font-size: 36px;
+  font-size: 54px;
   color: ${(props) =>
     props.color == "Violet"
       ? colors.five_color_violet_pink_BC6BFA
@@ -26,7 +26,7 @@ export const FrontTitleSC = styled.p`
 
 export const BackTitleSC = styled.p`
   font-weight: bold;
-  font-size: 70px;
+  font-size: 86px;
   color: ${(props) =>
     props.color == "Violet"
       ? colors.primary_transparent_color_violet_10
