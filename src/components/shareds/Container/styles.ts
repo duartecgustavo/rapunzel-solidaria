@@ -7,6 +7,8 @@ export const ContainerSC = styled.div<IContainerProps>`
   align-items: ${(props) => props.align || "center"};
   justify-content: ${(props) => props.justify || "center"};
   background-color: ${(props) => props.color || "black"};
+  margin-top: ${(props) => props.marginTop || "none"};
+  padding-top: ${(props) => props.paddingTop || "none"};
 
   @media (max-width: 768px) {
     height: auto;

@@ -9,6 +9,8 @@ export interface IContainerProps {
   align?: "left" | "center" | "right";
   height?: string;
   ismobile?: any;
+  marginTop?: string;
+  paddingTop?: string;
 }
 
 const Container = ({
@@ -18,6 +20,8 @@ const Container = ({
   align,
   height,
   ismobile,
+  marginTop,
+  paddingTop
 }: IContainerProps) => {
   return (
     <>
@@ -28,6 +32,8 @@ const Container = ({
         justify={justify}
         height={height}
         ismobile={ismobile}
+        marginTop={marginTop}
+        paddingTop={paddingTop}
       >
         {children}
       </ContainerSC>

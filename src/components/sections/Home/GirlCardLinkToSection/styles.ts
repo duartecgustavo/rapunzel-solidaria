@@ -29,6 +29,7 @@ export const TextLink = styled.p`
 `;
 
 export const JoanaSvgSC = styled(Joana)`
+  height: 240px;
   @media (max-width: 768px) {
     color: ${colors.white_FFFFFF};
   }
@@ -37,6 +38,7 @@ export const JoanaSvgSC = styled(Joana)`
   }
 `;
 export const JessicaSvgSC = styled(Jessica)`
+  height: 240px;
   @media (max-width: 768px) {
     color: ${colors.white_FFFFFF};
   }
@@ -45,6 +47,7 @@ export const JessicaSvgSC = styled(Jessica)`
   }
 `;
 export const JaquelineSvgSC = styled(Jaqueline)`
+  height: 240px;
   @media (max-width: 768px) {
     color: ${colors.white_FFFFFF};
   }
@@ -53,6 +56,7 @@ export const JaquelineSvgSC = styled(Jaqueline)`
   }
 `;
 export const JulianaSvgSC = styled(Juliana)`
+  height: 240px;
   @media (max-width: 768px) {
     color: ${colors.white_FFFFFF};
   }
@@ -61,6 +65,7 @@ export const JulianaSvgSC = styled(Juliana)`
   }
 `;
 export const JuremaSvgSC = styled(Jurema)`
+  height: 240px;
   @media (max-width: 768px) {
     color: ${colors.white_FFFFFF};
   }
