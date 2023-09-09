@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
 import { BeautyTitle, Text } from "@/components/shareds";
-import { ButtonSC } from "../Navbar/styles";
 import { colors } from "@/styles/colors";
+import { useState } from 'react';
+import { ButtonSC } from "../Navbar/styles";
 
 const Depositions = () => {
     const [nome, setNome] = useState('');
