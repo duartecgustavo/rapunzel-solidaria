@@ -14,7 +14,7 @@ function App() {
       <Container
         background={colors.primary_color_violet_A73AA7}
         ismobile="false"
-        height="auto"
+        height="100vh"
         paddingTop="90px"
       >
         <PrimaryPage />

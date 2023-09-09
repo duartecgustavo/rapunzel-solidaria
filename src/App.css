@@ -64,3 +64,14 @@ body::-webkit-scrollbar-thumb {
 .containerGirlsCardLinkToSection {
   margin-top: -60px !important;
 }
+
+.form-control::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  font-family: "Architects Daughter", sans-serif !important;
+  font-style: italic !important;
+}
+
+.form-control {
+  color: rgba(0, 0, 0);
+  font-family: "Architects Daughter", sans-serif !important;
+}
