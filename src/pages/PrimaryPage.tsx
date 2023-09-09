@@ -11,7 +11,7 @@ const PrimaryPage = () => {
             Color="White"
 
         />
-        <div className="row justify-content-center pb-5 teste">
+        <div className="row justify-content-center pb-5 containerGirlsCardLinkToSection">
             <GirlCardLinkToSection TxtLink="COMO RECEBER" GirlName="Jessica" />
             <GirlCardLinkToSection TxtLink="AVISOS" GirlName="Jurema" />
             <GirlCardLinkToSection TxtLink="COMO DOAR" GirlName="Jaqueline" />
