@@ -8,6 +8,11 @@
   font-family: "Concert One", "Architects Daughter", sans-serif !important;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
 a {
   color: var(--primary-color);
   text-decoration: none;

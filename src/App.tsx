@@ -2,7 +2,15 @@ import "@/App.css";
 import { Footer, Navbar } from "@/components/sections";
 import { BeautyTitle, Container } from "@/components/shareds";
 import { colors } from "@/styles/colors";
-import { PrimaryPage, WhoWeArePage, HowToReceivePage, HowToDonatePage, Modals, Drawers, DepositionsPage } from "@/pages";
+import {
+  PrimaryPage,
+  WhoWeArePage,
+  HowToReceivePage,
+  HowToDonatePage,
+  Modals,
+  Drawers,
+  DepositionsPage,
+} from "@/pages";
 
 // pendente - FIGMA, Criar prototipo mobile
 
@@ -19,27 +27,40 @@ function App() {
       >
         <PrimaryPage />
       </Container>
-      <Container background={colors.white_FFFFFF} height="auto">
+      <Container
+        id="WhoWeArePage"
+        background={colors.white_FFFFFF}
+        height="auto"
+      >
         <WhoWeArePage />
       </Container>
       <Container
+        id="HowToDonatePage"
         background={colors.third_color_violet_blue_6F66BA}
         height="auto"
       >
         <HowToDonatePage />
       </Container>
       <Container
+        id="HowToReceivePage"
         background={colors.five_color_violet_pink_BC6BFA}
         height="auto"
       >
         <HowToReceivePage />
       </Container>
-      <Container background={colors.white_FFFFFF} height="25vh">
+
+      <Container id="Apoiadores" background={colors.white_FFFFFF} height="25vh">
         <BeautyTitle FrontTitle="Apoiadores" BackTitle="AJUDE" Color="Violet" />
       </Container>
-      <Container background={colors.six_color_orange_C18151} height="auto">
+
+      <Container
+        id="DepositionsPage"
+        background={colors.six_color_orange_C18151}
+        height="auto"
+      >
         <DepositionsPage />
       </Container>
+
       <Footer />
       <Modals />
       <Drawers />

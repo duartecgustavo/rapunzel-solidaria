@@ -12,11 +12,13 @@ import {
 interface IGirlCardLinkToSection {
   TxtLink: string;
   GirlName?: "Jessica" | "Jaqueline" | "Joana" | "Juliana" | "Jurema";
+  href?: string;
 }
 
 const GirlCardLinkToSection = ({
   TxtLink,
   GirlName,
+  href,
 }: IGirlCardLinkToSection) => {
   const GetSvgGirl = (GirlName?: any) => {
     switch (GirlName) {
@@ -36,7 +38,10 @@ const GirlCardLinkToSection = ({
   };
 
   return (
-    <ContainerGirlCardLinkToSection className="col-10 col-sm-6 col-md-4 col-lg-2 col-xl-2">
+    <ContainerGirlCardLinkToSection
+      href={href}
+      className="col-10 col-sm-6 col-md-4 col-lg-2 col-xl-2"
+    >
       {GetSvgGirl(GirlName)}
       <TextLink>{TxtLink}</TextLink>
     </ContainerGirlCardLinkToSection>

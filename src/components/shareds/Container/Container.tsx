@@ -3,6 +3,7 @@
 import { ContainerSC } from "./styles";
 
 export interface IContainerProps {
+  id?: string;
   children: React.ReactNode;
   background?: string;
   justify?: "left" | "center" | "right";
@@ -13,7 +14,10 @@ export interface IContainerProps {
   paddingTop?: string;
 }
 
+// pendente - deixar margim top e bottom das paginas em um padrão, de preferencia iguais e com bastante margin quando na web
+
 const Container = ({
+  id,
   children,
   background,
   justify,
@@ -21,11 +25,12 @@ const Container = ({
   height,
   ismobile,
   marginTop,
-  paddingTop
+  paddingTop,
 }: IContainerProps) => {
   return (
     <>
       <ContainerSC
+        id={id}
         className="row"
         color={background}
         align={align}

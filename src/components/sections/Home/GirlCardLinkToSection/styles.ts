@@ -6,7 +6,7 @@ import { ReactComponent as Joana } from "@/assets/Joana.svg";
 import { ReactComponent as Juliana } from "@/assets/Juliana.svg";
 import { ReactComponent as Jurema } from "@/assets/Jurema.svg";
 
-export const ContainerGirlCardLinkToSection = styled.div`
+export const ContainerGirlCardLinkToSection = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;

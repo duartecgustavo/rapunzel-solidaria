@@ -3,6 +3,8 @@ import { useEffect, useRef, useState } from "react";
 import Dropdown from "./Dropdown";
 import { ButtonSC, IconLogoSC, IconMenuSC, NavbarSC, TextSC } from "./styles";
 
+// pendente - quando for mobile, criar referencias dos links
+
 const Navbar = () => {
   const [dropdown, setDropdown] = useState(false);
   const dropdownRef = useRef(null);
