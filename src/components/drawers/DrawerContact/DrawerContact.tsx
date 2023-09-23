@@ -1,6 +1,8 @@
 import { BeautyTitle, SocialMidia, Text, TextMark } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 
+// pendente - adicionar scroll no drawer
+
 const DrawerContact = () => {
   return (
     <>
