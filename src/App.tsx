@@ -12,7 +12,9 @@ import {
   DepositionsPage,
 } from "@/pages";
 
-// pendente - FIGMA, Criar prototipo mobile
+// pendente - FIGMA, Criar prototipo mobile - criar tela principal para mobile
+
+// pendente - ADICIONAR BASICO DE ACESSIBILIDADE
 
 function App() {
   return (
@@ -23,7 +25,6 @@ function App() {
         background={colors.primary_color_violet_A73AA7}
         ismobile="false"
         height="100vh"
-        paddingTop="90px"
       >
         <PrimaryPage />
       </Container>
@@ -38,13 +39,14 @@ function App() {
         id="HowToDonatePage"
         background={colors.third_color_violet_blue_6F66BA}
         height="auto"
-      >
+        >
         <HowToDonatePage />
       </Container>
       <Container
         id="HowToReceivePage"
         background={colors.five_color_violet_pink_BC6BFA}
         height="auto"
+        paddingBottom="none !important"
       >
         <HowToReceivePage />
       </Container>

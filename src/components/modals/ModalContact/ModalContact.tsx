@@ -17,7 +17,7 @@ const ModalContact = () => {
           <div className="modal-content pb-5">
             <div
               className="modal-header d-flex justify-content-end"
-              style={{ borderBottom: "none" }}
+              style={{ borderBottomColor: `1px solid ${colors.black_transparent_25}` }}
             >
               <button
                 type="button"
@@ -26,7 +26,7 @@ const ModalContact = () => {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="modal-body px-5">
+            <div className="modal-body pb-5 px-5">
               <div>
                 <BeautyTitle
                   FrontTitle="Quero ajudar!"

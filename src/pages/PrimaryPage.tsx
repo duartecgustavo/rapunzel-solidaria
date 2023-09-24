@@ -1,8 +1,6 @@
 import { GirlCardLinkToSection } from "@/components/sections";
 import { BeautyTitle } from "@/components/shareds";
 
-// pendente - Ajustar scroll quando clica no link que esta deixando as paginas levemente para baixo
-
 const PrimaryPage = () => {
   return (
     <>

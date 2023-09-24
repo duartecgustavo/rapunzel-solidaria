@@ -45,7 +45,7 @@ const Depositions = () => {
       <DepositionForm onSubmit={handleSubmit} />
 
       <div
-        className="col-10 col-sm-6 my-5 gap-2"
+        className="col-10 col-sm-6 gap-2"
         style={{
           display: "flex",
           justifyContent: "space-around",

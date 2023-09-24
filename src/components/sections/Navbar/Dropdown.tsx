@@ -1,7 +1,6 @@
 import { colors } from "@/styles/colors";
 import { LiSC, UlSC } from "./styles";
 
-// pendente - fazer referencias as sessões
 const Dropdown = () => {
   return (
     <>
@@ -42,16 +41,16 @@ const Dropdown = () => {
           </a>
         </LiSC>
         <LiSC>
-          <a href="#">Como doar?</a>
+          <a href="#">Quem somos?.</a>
         </LiSC>
         <LiSC>
-          <a href="#">Como receber?</a>
+          <a href="#HowToDonatePage">Como doar?</a>
         </LiSC>
         <LiSC>
-          <a href="#">Depoimentos.</a>
+          <a href="#HowToReceivePage">Como receber?</a>
         </LiSC>
         <LiSC>
-          <a href="#">Avisos.</a>
+          <a href="#DepositionsPage">Depoimentos.</a>
         </LiSC>
       </UlSC>
     </>

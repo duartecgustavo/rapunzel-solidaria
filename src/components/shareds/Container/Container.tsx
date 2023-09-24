@@ -11,10 +11,10 @@ export interface IContainerProps {
   height?: string;
   ismobile?: any;
   marginTop?: string;
+  marginBottom?: string;
+  paddingBottom?: string;
   paddingTop?: string;
 }
-
-// pendente - deixar margim top e bottom das paginas em um padrão, de preferencia iguais e com bastante margin quando na web
 
 const Container = ({
   id,
@@ -26,6 +26,7 @@ const Container = ({
   ismobile,
   marginTop,
   paddingTop,
+  paddingBottom
 }: IContainerProps) => {
   return (
     <>
@@ -39,6 +40,7 @@ const Container = ({
         ismobile={ismobile}
         marginTop={marginTop}
         paddingTop={paddingTop}
+        paddingBottom={paddingBottom}
       >
         {children}
       </ContainerSC>

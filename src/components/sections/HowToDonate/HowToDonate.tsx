@@ -13,9 +13,9 @@ import img9 from "../../../assets/HowToDonate/img9.png";
 const HowToDonate = () => {
   return (
     <>
-      <div className="row justify-content-center my-5">
+      <div className="row justify-content-center">
         <BeautyTitle FrontTitle="Como doar?" BackTitle="DOE" Color="White" />
-        <div className="row justify-content-center my-5 col-10 col-xxl-8 gap-5">
+        <div className="row justify-content-center col-10 col-xxl-8 gap-5">
           <CardDonate
             img={img1}
             text="Aceitamos qualquer tipo de cabelo, de qualquer cor, inclusive grisalhos. Pode ter química, ser liso ou crespo!"

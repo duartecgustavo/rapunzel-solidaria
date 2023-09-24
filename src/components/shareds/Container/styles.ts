@@ -8,7 +8,8 @@ export const ContainerSC = styled.div<IContainerProps>`
   justify-content: ${(props) => props.justify || "center"};
   background-color: ${(props) => props.color || "black"};
   margin-top: ${(props) => props.marginTop || "none"};
-  padding-top: ${(props) => props.paddingTop || "none"};
+  padding-top: ${(props) => props.paddingTop || "100px"};
+  padding-bottom: ${(props) => props.paddingBottom || "100px"};
 
   @media (max-width: 768px) {
     height: auto;

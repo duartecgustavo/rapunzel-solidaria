@@ -30,7 +30,7 @@ const DepositionForm = ({ onSubmit }: DepositionFormProps) => {
     <form
       onSubmit={handleSubmit}
       className="d-flex flex-column col-10 col-sm-8"
-      style={{ gap: "32px" }}
+      style={{ gap: "32px", paddingBottom: "150px" }}
     >
       <Text
         family="Concert One"

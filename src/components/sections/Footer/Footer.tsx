@@ -5,7 +5,7 @@ import { FooterSC, FooterSectionSC, GridContainerSC } from "./style";
 const Footer = () => {
   return (
     <>
-      <FooterSC className="d-flex container-fluid justify-content-center flex-column align-items-center gap-5">
+      <FooterSC className="d-flex container-fluid justify-content-center flex-column align-items-center">
         <FooterSectionSC>
           <Text
             size="24px"

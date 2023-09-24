@@ -117,6 +117,5 @@ export const LiSC = styled.ul`
 
   & > a:hover {
     cursor: pointer;
-    background-color: red;
   }
 `;

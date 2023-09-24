@@ -4,7 +4,7 @@ import { colors } from "@/styles/colors";
 const WhoWeArePage = () => {
   return (
     <>
-      <div className="row justify-content-center mt-5 mb-5">
+      <div className="row justify-content-center">
         <BeautyTitle
           FrontTitle="Quem somos? ;]"
           BackTitle="NÓS"
