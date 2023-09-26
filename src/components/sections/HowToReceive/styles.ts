@@ -33,7 +33,7 @@ export const FormLinkSC = styled.a`
   }
 
   @media (max-width: 768px) {
-    gap: 8px;
+    gap: 16px;
   }
 `;
 
@@ -41,7 +41,7 @@ export const MailmanScgSC = styled(Mailman)`
   height: 260px;
   @media (max-width: 768px) {
     height: 180px;
-    margin-top: 0px !important;
+    margin-top: 50px !important;
   }
 `;
 export const LinkScgSC = styled(Link)`

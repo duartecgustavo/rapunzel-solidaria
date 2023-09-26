@@ -2,8 +2,6 @@ import { BeautyTitle } from "@/components/shareds";
 import CardDepositions from "./CardDepositions";
 import DepositionForm from "./DepositionForm";
 
-// pendente - Ajustar grid dos depoimentos
-
 interface IDeposition {
   title: string;
   deposition: string[];
@@ -18,13 +16,63 @@ let array: IDeposition[] = [
   },
   {
     title: "Titulo 2",
-    deposition: ["LALALALAA2", "dodododododod", "LULULULULU"],
+    deposition: [
+      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
+      "dodododododod",
+      "LULULULULU",
+    ],
     name: "Nome2",
   },
   {
     title: "Titulo 3",
     deposition: ["LALALALAA3", "sususususus", "LULULULULU"],
     name: "Nome3",
+  },
+  {
+    title: "Titulo 4",
+    deposition: ["LALALALAA4", "bobobobobo", "LULULULULU"],
+    name: "Nome4",
+  },
+  {
+    title: "Titulo 4",
+    deposition: [
+      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
+      "bobobobobo",
+      "LULULULULU",
+    ],
+    name: "Nome4",
+  },
+  {
+    title: "Titulo 4",
+    deposition: ["LALALALAA4", "bobobobobo", "LULULULULU"],
+    name: "Nome4",
+  },
+  {
+    title: "Titulo 4",
+    deposition: [
+      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
+      "bobobobobo",
+      "LULULULULU",
+    ],
+    name: "Nome4",
+  },
+  {
+    title: "Titulo 4",
+    deposition: [
+      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
+      "bobobobobo",
+      "LULULULULU",
+    ],
+    name: "Nome4",
+  },
+  {
+    title: "Titulo 4",
+    deposition: [
+      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
+      "bobobobobo",
+      "LULULULULU",
+    ],
+    name: "Nome4",
   },
   {
     title: "Titulo 4",
@@ -44,22 +92,39 @@ const Depositions = () => {
 
       <DepositionForm onSubmit={handleSubmit} />
 
-      <div
-        className="col-10 col-sm-6 gap-2"
-        style={{
-          display: "flex",
-          justifyContent: "space-around",
-          flexWrap: "wrap",
-        }}
-      >
-        {array.map((item, index) => (
-          <CardDepositions
-            key={index}
-            title={item.title}
-            deposition={item.deposition}
-            name={item.name}
-          />
-        ))}
+      {/* pendente - quando mobile, ajustar grid */}
+
+      <div className="d-flex justify-content-center">
+        <div className="row col-4">
+          <div className="col-12">
+            {array.map(
+              (item, index) =>
+                index % 2 == 0 && (
+                  <CardDepositions
+                    key={index}
+                    title={item.title}
+                    deposition={item.deposition}
+                    name={item.name}
+                  />
+                )
+            )}
+          </div>
+        </div>
+        <div className="row col-4">
+          <div className="col-12">
+            {array.map(
+              (item, index) =>
+                index % 2 == 1 && (
+                  <CardDepositions
+                    key={index}
+                    title={item.title}
+                    deposition={item.deposition}
+                    name={item.name}
+                  />
+                )
+            )}
+          </div>
+        </div>
       </div>
     </>
   );

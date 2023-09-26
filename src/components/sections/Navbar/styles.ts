@@ -68,6 +68,7 @@ export const TextSC = styled.p`
 `;
 
 export const ButtonSC = styled.button<{ isoutlined?: any }>`
+  width: fit-content;
   font-size: 22px;
   user-select: none;
   color: ${(props) =>
@@ -96,6 +97,10 @@ export const ButtonSC = styled.button<{ isoutlined?: any }>`
         ? colors.secondary_color_green_light_6FBECF
         : colors.primary_color_violet_A73AA7};
     border: ${(props) => props.isoutlined && "3px solid #6FBECF"};
+
+    @media (max-width: 768px) {
+      width: 100% !important;
+    }
   }
 `;
 

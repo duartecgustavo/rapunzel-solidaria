@@ -14,5 +14,6 @@ export const ContainerSC = styled.div<IContainerProps>`
   @media (max-width: 768px) {
     height: auto;
     display: ${(props) => (Boolean(!props.ismobile) ? "flex" : "none")};
+    padding-top: ${(props) => props.paddingTop || "50px"};
   }
 `;

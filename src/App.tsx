@@ -14,7 +14,10 @@ import {
 
 // pendente - FIGMA, Criar prototipo mobile - criar tela principal para mobile
 
+// pendente - TELA DE INICIO MOBILE (CAPA COM O NOME DO SITE E UMA IMAGEM EM SVG)
 // pendente - ADICIONAR BASICO DE ACESSIBILIDADE
+// pendente - ADICIONAR APOIADORES
+// pendente - MODAL QUANDO ESTA NO MOBILE NÃO DESCE
 
 function App() {
   return (
@@ -39,7 +42,7 @@ function App() {
         id="HowToDonatePage"
         background={colors.third_color_violet_blue_6F66BA}
         height="auto"
-        >
+      >
         <HowToDonatePage />
       </Container>
       <Container

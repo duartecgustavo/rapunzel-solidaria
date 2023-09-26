@@ -22,6 +22,10 @@ export const FrontTitleSC = styled.p`
       : colors.white_FFFFFF};
   cursor: cell;
   user-select: none;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
 `;
 
 export const BackTitleSC = styled.p`
@@ -33,4 +37,8 @@ export const BackTitleSC = styled.p`
       : colors.white_transparent_10};
   cursor: cell;
   user-select: none;
+
+  @media (max-width: 768px) {
+    font-size: 54px;
+  }
 `;

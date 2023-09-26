@@ -88,12 +88,13 @@ const DepositionForm = ({ onSubmit }: DepositionFormProps) => {
           onChange={(e) => setDepoimento(e.target.value)}
         ></textarea>
       </div>
+
+      {/* pendente - ajustar tamanho quando mobile */}
       <ButtonSC
         type="submit"
         style={{
           color: colors.white_FFFFFF,
           borderRadius: "4px",
-          width: "fit-content",
           padding: "8px 24px 8px 24px",
         }}
       >
