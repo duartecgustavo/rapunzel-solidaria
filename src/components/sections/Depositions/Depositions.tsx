@@ -1,6 +1,7 @@
 import { BeautyTitle } from "@/components/shareds";
 import CardDepositions from "./CardDepositions";
 import DepositionForm from "./DepositionForm";
+import { isMobile } from "react-device-detect";
 
 interface IDeposition {
   title: string;
@@ -86,46 +87,65 @@ const Depositions = () => {
     console.log(e);
   };
 
+  console.log("isMobile", isMobile);
+
   return (
     <>
       <BeautyTitle FrontTitle="Depoimentos" BackTitle="FALE!" Color="White" />
 
       <DepositionForm onSubmit={handleSubmit} />
 
-      {/* pendente - quando mobile, ajustar grid */}
-
-      <div className="d-flex justify-content-center">
-        <div className="row col-4">
-          <div className="col-12">
-            {array.map(
-              (item, index) =>
-                index % 2 == 0 && (
-                  <CardDepositions
-                    key={index}
-                    title={item.title}
-                    deposition={item.deposition}
-                    name={item.name}
-                  />
-                )
-            )}
+      {!isMobile ? (
+        <div
+          // pendente - ajustar tamanho da exibição dos cards de sepoimentos
+          className="d-flex justify-content-center depositionScroll"
+          style={{ height: "800px", overflow: "auto" }}
+        >
+          <div className="row col-4">
+            <div className="col-12">
+              {array.map(
+                (item, index) =>
+                  index % 2 == 0 && (
+                    <CardDepositions
+                      key={index}
+                      title={item.title}
+                      deposition={item.deposition}
+                      name={item.name}
+                    />
+                  )
+              )}
+            </div>
+          </div>
+          <div className="row col-4">
+            <div className="col-12">
+              {array.map(
+                (item, index) =>
+                  index % 2 == 1 && (
+                    <CardDepositions
+                      key={index}
+                      title={item.title}
+                      deposition={item.deposition}
+                      name={item.name}
+                    />
+                  )
+              )}
+            </div>
           </div>
         </div>
-        <div className="row col-4">
-          <div className="col-12">
-            {array.map(
-              (item, index) =>
-                index % 2 == 1 && (
-                  <CardDepositions
-                    key={index}
-                    title={item.title}
-                    deposition={item.deposition}
-                    name={item.name}
-                  />
-                )
-            )}
+      ) : (
+        <div className="d-flex justify-content-center">
+          <div className="row col-10">
+            {array.map((item, index) => (
+              <CardDepositions
+                key={index}
+                title={item.title}
+                deposition={item.deposition}
+                name={item.name}
+              />
+            ))}
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 };

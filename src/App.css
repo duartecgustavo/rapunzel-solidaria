@@ -66,6 +66,22 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #e1ff26;
 }
 
+/* Estilo scroll bar caixas de depoimentos */
+
+.depositionScroll::-webkit-scrollbar {
+  width: 0px;
+}
+
+.depositionScroll::-webkit-scrollbar-track {
+  background-color: rgb(116, 116, 116);
+  width: 0px;
+}
+
+.depositionScroll::-webkit-scrollbar-thumb {
+  background-color: #e1ff26;
+  border: 3px solid #e1ff26;
+}
+
 .containerGirlsCardLinkToSection {
   margin-top: -60px !important;
 }

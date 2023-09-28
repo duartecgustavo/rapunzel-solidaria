@@ -15,7 +15,12 @@ import {
 // pendente - FIGMA, Criar prototipo mobile - criar tela principal para mobile
 
 // pendente - TELA DE INICIO MOBILE (CAPA COM O NOME DO SITE E UMA IMAGEM EM SVG)
-// pendente - ADICIONAR BASICO DE ACESSIBILIDADE
+
+// pendente - ADICIONAR BASICO DE ACESSIBILIDADE (ohar no chat gpt)
+//legacy.reactjs.org/docs/accessibility.html
+//www.npmjs.com/package/react-axe
+// react-axe é uma ferramenta de análise de acessibilidade que pode ser usada com o React. Ele fornece relatórios detalhados sobre problemas de acessibilidade em seu aplicativo.
+
 // pendente - ADICIONAR APOIADORES
 // pendente - MODAL QUANDO ESTA NO MOBILE NÃO DESCE
 

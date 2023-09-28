@@ -100,6 +100,7 @@ export const ButtonSC = styled.button<{ isoutlined?: any }>`
 
     @media (max-width: 768px) {
       width: 100% !important;
+      background-color: red !important;
     }
   }
 `;

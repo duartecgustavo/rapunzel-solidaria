@@ -1,5 +1,3 @@
-// CARD DEPOSITIONS
-
 import styled from "styled-components";
 import { ReactComponent as Aspas } from "@/assets/icon-aspas.svg";
 
@@ -12,6 +10,14 @@ export const ContainerCardDepositionsFC = styled.div`
   background-color: white;
 
   margin-bottom: 16px !important;
+`;
+
+export const FormFC = styled.form`
+  gap: 32px;
+  padding-bottom: 150px;
+  @media (max-width: 768px) {
+    padding-bottom: 80px;
+  }
 `;
 
 export const AspasSvgSC = styled(Aspas)`

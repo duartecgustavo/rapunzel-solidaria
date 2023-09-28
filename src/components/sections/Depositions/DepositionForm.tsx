@@ -2,6 +2,8 @@ import { Text } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 import { FormEvent, useState } from "react";
 import { ButtonSC } from "../Navbar/styles";
+import { FormFC } from "./styles";
+import { isMobile } from "react-device-detect";
 
 interface FormData {
   nome: string;
@@ -27,10 +29,9 @@ const DepositionForm = ({ onSubmit }: DepositionFormProps) => {
   };
 
   return (
-    <form
+    <FormFC
       onSubmit={handleSubmit}
       className="d-flex flex-column col-10 col-sm-8"
-      style={{ gap: "32px", paddingBottom: "150px" }}
     >
       <Text
         family="Concert One"
@@ -89,18 +90,18 @@ const DepositionForm = ({ onSubmit }: DepositionFormProps) => {
         ></textarea>
       </div>
 
-      {/* pendente - ajustar tamanho quando mobile */}
       <ButtonSC
         type="submit"
         style={{
           color: colors.white_FFFFFF,
           borderRadius: "4px",
           padding: "8px 24px 8px 24px",
+          width: isMobile ? "100%" : "",
         }}
       >
         ENVIAR DEPOIMENTO
       </ButtonSC>
-    </form>
+    </FormFC>
   );
 };
 
