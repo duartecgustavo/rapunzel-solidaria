@@ -22,7 +22,6 @@ import {
 // react-axe é uma ferramenta de análise de acessibilidade que pode ser usada com o React. Ele fornece relatórios detalhados sobre problemas de acessibilidade em seu aplicativo.
 
 // pendente - ADICIONAR APOIADORES
-// pendente - MODAL QUANDO ESTA NO MOBILE NÃO DESCE
 
 function App() {
   return (

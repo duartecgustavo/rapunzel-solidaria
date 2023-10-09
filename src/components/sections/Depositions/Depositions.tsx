@@ -1,7 +1,9 @@
-import { BeautyTitle } from "@/components/shareds";
+import { BeautyTitle, Text } from "@/components/shareds";
 import CardDepositions from "./CardDepositions";
 import DepositionForm from "./DepositionForm";
 import { isMobile } from "react-device-detect";
+import { ContainerCardsDepositinonsFC } from "./styles";
+import { useState } from "react";
 
 interface IDeposition {
   title: string;
@@ -83,6 +85,8 @@ let array: IDeposition[] = [
 ];
 
 const Depositions = () => {
+  const [containerDepositionsOpen, setContainerDepositionsOpen] =
+    useState(false);
   const handleSubmit = (e: any) => {
     console.log(e);
   };
@@ -96,10 +100,10 @@ const Depositions = () => {
       <DepositionForm onSubmit={handleSubmit} />
 
       {!isMobile ? (
-        <div
+        <ContainerCardsDepositinonsFC
+          overflow={containerDepositionsOpen}
           // pendente - ajustar tamanho da exibição dos cards de sepoimentos
           className="d-flex justify-content-center depositionScroll"
-          style={{ height: "800px", overflow: "auto" }}
         >
           <div className="row col-4">
             <div className="col-12">
@@ -131,7 +135,36 @@ const Depositions = () => {
               )}
             </div>
           </div>
-        </div>
+          {!containerDepositionsOpen && (
+            <button
+              onClick={() =>
+                setContainerDepositionsOpen(!containerDepositionsOpen)
+              }
+              style={{
+                width: "70%",
+                height: "100px",
+                background: "red",
+                position: "absolute",
+                bottom: "0px",
+                backgroundColor: "rgba(167, 58, 167, 0.8)",
+                border: "none",
+              }}
+            >
+              <Text
+                size="28px"
+                align="left"
+                family="Concert One"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                }}
+              >
+                Clique aqui para expandir
+              </Text>
+            </button>
+          )}
+        </ContainerCardsDepositinonsFC>
       ) : (
         <div className="d-flex justify-content-center">
           <div className="row col-10">

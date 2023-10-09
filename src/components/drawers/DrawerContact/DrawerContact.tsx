@@ -17,7 +17,7 @@ const DrawerContact = () => {
             aria-label="Close"
           ></button>
         </div>
-        <div className="modal-body px-5">
+        <div className="modal-body px-5 overflow-scroll">
           <div>
             <BeautyTitle
               FrontTitle="Quero ajudar!"
