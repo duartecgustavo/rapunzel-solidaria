@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { ReactComponent as Aspas } from "@/assets/icon-aspas.svg";
+import { colors } from "@/styles/colors";
 
 export const ContainerCardDepositionsFC = styled.div`
   display: flex;
@@ -28,4 +29,19 @@ export const ContainerCardsDepositinonsFC = styled.div`
   position: relative;
   height: ${(props) => (props.overflow ? "auto" : "800px")};
   overflow: ${(props) => (props.overflow ? "auto" : "hidden")};
+`;
+
+export const ButtonExpandContainerCards = styled.button`
+  width: 70%;
+  height: 100px;
+  background: red;
+  position: absolute;
+  bottom: 0px;
+  background-color: ${colors.six_color_orange_C18151_80};
+  border: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: rgba(193, 129, 81, 0.6);
+  }
 `;

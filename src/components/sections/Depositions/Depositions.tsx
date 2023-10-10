@@ -2,8 +2,12 @@ import { BeautyTitle, Text } from "@/components/shareds";
 import CardDepositions from "./CardDepositions";
 import DepositionForm from "./DepositionForm";
 import { isMobile } from "react-device-detect";
-import { ContainerCardsDepositinonsFC } from "./styles";
+import {
+  ButtonExpandContainerCards,
+  ContainerCardsDepositinonsFC,
+} from "./styles";
 import { useState } from "react";
+import { colors } from "@/styles/colors";
 
 interface IDeposition {
   title: string;
@@ -102,7 +106,6 @@ const Depositions = () => {
       {!isMobile ? (
         <ContainerCardsDepositinonsFC
           overflow={containerDepositionsOpen}
-          // pendente - ajustar tamanho da exibição dos cards de sepoimentos
           className="d-flex justify-content-center depositionScroll"
         >
           <div className="row col-4">
@@ -136,23 +139,15 @@ const Depositions = () => {
             </div>
           </div>
           {!containerDepositionsOpen && (
-            <button
+            <ButtonExpandContainerCards
               onClick={() =>
                 setContainerDepositionsOpen(!containerDepositionsOpen)
               }
-              style={{
-                width: "70%",
-                height: "100px",
-                background: "red",
-                position: "absolute",
-                bottom: "0px",
-                backgroundColor: "rgba(167, 58, 167, 0.8)",
-                border: "none",
-              }}
             >
               <Text
                 size="28px"
                 align="left"
+                color={colors.white_FFFFFF}
                 family="Concert One"
                 style={{
                   display: "flex",
@@ -160,9 +155,9 @@ const Depositions = () => {
                   cursor: "pointer",
                 }}
               >
-                Clique aqui para expandir
+                MOSTRAR TODOS
               </Text>
-            </button>
+            </ButtonExpandContainerCards>
           )}
         </ContainerCardsDepositinonsFC>
       ) : (

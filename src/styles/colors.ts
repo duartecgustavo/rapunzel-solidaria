@@ -18,6 +18,7 @@ export const colors = {
   four_color_yellow_E1FF26_60: "rgba(225, 255, 38, 0.6)",
   five_color_violet_pink_BC6BFA: "#bc6bfa",
   five_color_violet_pink_BC6BFA_40: "rgba(188, 107, 250, 0.4)",
-  six_color_orange_C18151: "#c18151",
+  six_color_orange_C18151: "rgba(193, 129, 81, 1)",
+  six_color_orange_C18151_80: "rgba(193, 129, 81, 0.8)",
   seven_color_violet_dark_6E36B3: "#6e36b3",
 };
