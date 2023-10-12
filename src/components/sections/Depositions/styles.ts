@@ -25,7 +25,7 @@ export const AspasSvgSC = styled(Aspas)`
   width: 70px;
 `;
 
-export const ContainerCardsDepositinonsFC = styled.div`
+export const ContainerCardsDepositinonsFC = styled.div<{ overflow: any }>`
   position: relative;
   height: ${(props) => (props.overflow ? "auto" : "800px")};
   overflow: ${(props) => (props.overflow ? "auto" : "hidden")};

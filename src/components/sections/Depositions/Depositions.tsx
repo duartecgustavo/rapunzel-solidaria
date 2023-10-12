@@ -90,7 +90,7 @@ let array: IDeposition[] = [
 
 const Depositions = () => {
   const [containerDepositionsOpen, setContainerDepositionsOpen] =
-    useState(false);
+    useState<boolean>(false);
   const handleSubmit = (e: any) => {
     console.log(e);
   };
