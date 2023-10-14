@@ -1,0 +1,10 @@
+export { ReactComponent as LogoBigLar } from "./logo_biglar.svg";
+export { ReactComponent as LogoClaro } from "./logo_claro.svg";
+export { ReactComponent as LogoCosan } from "./logo_cosan.svg";
+export { ReactComponent as LogoDrAgora } from "./logo_dragora.svg";
+export { ReactComponent as LogoMsd } from "./logo_msd.svg";
+export { ReactComponent as LogoNatura } from "./logo_natura.svg";
+export { ReactComponent as LogoSecon } from "./logo_secon.svg";
+export { ReactComponent as LogoStudio } from "./logo_studio.svg";
+export { ReactComponent as LogoTokyoMarine } from "./logo_tokyomarine.svg";
+export { ReactComponent as LogoYpiranga } from "./logo_ypiranga.svg";

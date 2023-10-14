@@ -1,16 +1,17 @@
 import "@/App.css";
 import { Footer, Navbar } from "@/components/sections";
-import { BeautyTitle, Container } from "@/components/shareds";
-import { colors } from "@/styles/colors";
+import { Container } from "@/components/shareds";
 import {
+  DepositionsPage,
+  Drawers,
+  HowToDonatePage,
+  HowToReceivePage,
+  Modals,
   PrimaryPage,
   WhoWeArePage,
-  HowToReceivePage,
-  HowToDonatePage,
-  Modals,
-  Drawers,
-  DepositionsPage,
 } from "@/pages";
+import { colors } from "@/styles/colors";
+import SupportersPage from "@/pages/SupportersPage";
 
 // pendente - FIGMA, Criar prototipo mobile - criar tela principal para mobile
 
@@ -20,8 +21,6 @@ import {
 //legacy.reactjs.org/docs/accessibility.html
 //www.npmjs.com/package/react-axe
 // react-axe é uma ferramenta de análise de acessibilidade que pode ser usada com o React. Ele fornece relatórios detalhados sobre problemas de acessibilidade em seu aplicativo.
-
-// pendente - ADICIONAR APOIADORES
 
 function App() {
   return (
@@ -58,8 +57,8 @@ function App() {
         <HowToReceivePage />
       </Container>
 
-      <Container id="Apoiadores" background={colors.white_FFFFFF} height="25vh">
-        <BeautyTitle FrontTitle="Apoiadores" BackTitle="AJUDE" Color="Violet" />
+      <Container id="Apoiadores" background={colors.white_FFFFFF} height="auto">
+        <SupportersPage />
       </Container>
 
       <Container
