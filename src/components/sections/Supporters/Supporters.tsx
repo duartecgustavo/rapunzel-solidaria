@@ -11,9 +11,6 @@ import {
   LogoTokyoMarineSC,
   LogoYpirangaSC,
 } from "./styles";
-import { colors } from "@/styles/colors";
-
-// pendente - ADICIONAR APOIADORES
 
 const Supporters = () => {
   return (
@@ -22,10 +19,16 @@ const Supporters = () => {
       <div
         style={{
           width: "100%",
+          height: "200px",
+          position: "relative",
           display: "flex",
           justifyContent: "space-between",
+          alignItems: "center",
           paddingInline: "80px",
-          background: colors.white_gray_E7E7E7,
+          paddingBottom: "100px",
+          background: "rgb(213,213,213)",
+          background:
+            "linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(186,186,186,0) 40%, rgba(186,186,186,1) 100%)",
         }}
       >
         <LogoBigLarSC />

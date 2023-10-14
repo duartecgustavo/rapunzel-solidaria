@@ -57,7 +57,12 @@ function App() {
         <HowToReceivePage />
       </Container>
 
-      <Container id="Apoiadores" background={colors.white_FFFFFF} height="auto">
+      <Container
+        id="Apoiadores"
+        background={colors.white_FFFFFF}
+        height="auto"
+        paddingBottom="0px"
+      >
         <SupportersPage />
       </Container>
 
