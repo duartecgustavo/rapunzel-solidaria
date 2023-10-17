@@ -12,6 +12,19 @@ import {
 } from "@/assets/Supporters";
 import styled from "styled-components";
 
+export const ContainerSupportersSC = styled.div`
+  width: 100%;
+  height: 200px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 80px;
+  padding-bottom: 100px;
+  background:
+    linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(186,186,186,0) 40%, rgba(186,186,186,1) 100%);
+`;
+
 export const LogoBigLarSC = styled(LogoBigLar)`
   &:hover {
     cursor: pointer;

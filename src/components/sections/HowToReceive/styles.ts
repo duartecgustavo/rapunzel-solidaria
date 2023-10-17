@@ -18,7 +18,6 @@ export const FormLinkSC = styled.a`
   stroke: ${colors.white_transparent_70};
 
   > * {
-    color: /* Cor normal */ ;
     text-decoration: none !important;
     transition: color 0.3s ease-in-out, text-decoration 0.3s ease-in-out,
       stroke 0.3s ease-in-out;
