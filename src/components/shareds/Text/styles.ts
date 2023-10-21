@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { ITextProps } from "./Text";
 
 export const TextSC = styled.p<ITextProps>`
-  display: ${(props) => (props.withTextMark ? "block" : "")};
+  display: ${(props) => (props.withtextmark ? "block" : "")};
   font-size: ${(props) => props.size || "12px"};
   color: ${(props) => props.color || "black"};
   text-align: ${(props) => props.align || "center"};

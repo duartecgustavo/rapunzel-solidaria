@@ -12,6 +12,7 @@ import {
   LogoTokyoMarineSC,
   LogoYpirangaSC,
 } from "./styles";
+// pendente - colocar responsividade nos apoiadores
 
 const Supporters = () => {
   return (

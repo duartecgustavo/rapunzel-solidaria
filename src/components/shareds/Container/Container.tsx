@@ -39,8 +39,8 @@ const Container = ({
         height={height}
         ismobile={ismobile}
         marginTop={marginTop}
-        paddingTop={paddingTop}
-        paddingBottom={paddingBottom}
+        pTop={paddingTop}
+        pBottom={paddingBottom}
       >
         {children}
       </ContainerSC>

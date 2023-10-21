@@ -10,7 +10,7 @@ export interface ITextProps {
   style?: React.CSSProperties;
   copy?: boolean;
   textgap?: any;
-  withTextMark?: boolean;
+  withtextmark?: string;
 }
 
 const Text = ({
@@ -21,7 +21,7 @@ const Text = ({
   align,
   family,
   style,
-  withTextMark
+  withtextmark
 }: ITextProps) => {
   function copyToClipboard() {
     if (copy && children) {
@@ -39,7 +39,7 @@ const Text = ({
         style={style}
         onClick={copyToClipboard}
         textgap={copy ? "4px" : undefined}
-        withTextMark={withTextMark}
+        withtextmark={withtextmark}
       >
         {children}
         {copy && <CopySvgSC color={color && color} />}

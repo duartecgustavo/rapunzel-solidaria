@@ -28,7 +28,7 @@ const HowToReceive = () => {
                 Doamos Amor em forma de Perucas!
             </Text>
             <Text
-                withTextMark={true}
+                withtextmark={"true"}
                 color={colors.white_FFFFFF}
                 family="Architects Daughter"
                 size="22px"
@@ -49,7 +49,7 @@ const HowToReceive = () => {
 
             <Text
                 style={{ display: "block", flexDirection: "row", justifyContent: "center", alignItems: "center" }}
-                withTextMark={true}
+                withtextmark={"true"}
                 color={colors.white_FFFFFF}
                 family="Architects Daughter"
                 size="22px"
@@ -57,7 +57,7 @@ const HowToReceive = () => {
                 Em seguida preencha <TextMark color="White">ATENTAMENTE</TextMark> o formulário, respondendo a todos. os campos com muito cuidado.
             </Text>
             <Text
-                withTextMark={true}
+                withtextmark={"true"}
                 color={colors.white_FFFFFF}
                 family="Architects Daughter"
                 size="22px"
@@ -65,7 +65,7 @@ const HowToReceive = () => {
                 <TextMark color="White">E MUITO IMPORTANTE!</TextMark>
             </Text>
             <Text
-                withTextMark={true}
+                withtextmark={"true"}
                 color={colors.white_FFFFFF}
                 family="Architects Daughter"
                 size="22px"

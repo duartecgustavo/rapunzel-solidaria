@@ -3,7 +3,8 @@ import { AspasSvgSC, ContainerCardDepositionsFC } from "./styles";
 
 interface ICardDepositionsProps {
   title: string;
-  deposition: string[];
+  deposition: string;
+  // deposition: string[];
   name: string;
 }
 
@@ -30,16 +31,16 @@ const CardDepositions = ({
             {title}
           </Text>
         </div>
-        {deposition.map((phrase, index) => (
+        {/* {deposition.map((phrase, index) => ( */}
           <Text
-            key={index}
+            // key={index}
             style={{ display: "flex", textAlign: "left" }}
             family="Architects Daughter"
             size="18px"
           >
-            {phrase}
+            {deposition}
           </Text>
-        ))}
+        {/* ))} */}
         <Text
           style={{ display: "flex", justifyContent: "end" }}
           family="Architects Daughter"

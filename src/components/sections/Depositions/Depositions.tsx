@@ -6,97 +6,56 @@ import {
   ButtonExpandContainerCards,
   ContainerCardsDepositinonsFC,
 } from "./styles";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { colors } from "@/styles/colors";
+import { Data, enviarDepoimento, pegarDepoimento } from "@/services/connectApi";
 
-interface IDeposition {
-  title: string;
-  deposition: string[];
-  name: string;
+interface Depoimento {
+  Titulo: string;
+  Nome: string;
+  Conteudo: string;
+  Email: string;
 }
-
-let array: IDeposition[] = [
-  {
-    title: "Titulo 1",
-    deposition: ["LALALALAA1", "lelelel", "LULULULULU"],
-    name: "Nome1",
-  },
-  {
-    title: "Titulo 2",
-    deposition: [
-      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
-      "dodododododod",
-      "LULULULULU",
-    ],
-    name: "Nome2",
-  },
-  {
-    title: "Titulo 3",
-    deposition: ["LALALALAA3", "sususususus", "LULULULULU"],
-    name: "Nome3",
-  },
-  {
-    title: "Titulo 4",
-    deposition: ["LALALALAA4", "bobobobobo", "LULULULULU"],
-    name: "Nome4",
-  },
-  {
-    title: "Titulo 4",
-    deposition: [
-      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
-      "bobobobobo",
-      "LULULULULU",
-    ],
-    name: "Nome4",
-  },
-  {
-    title: "Titulo 4",
-    deposition: ["LALALALAA4", "bobobobobo", "LULULULULU"],
-    name: "Nome4",
-  },
-  {
-    title: "Titulo 4",
-    deposition: [
-      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
-      "bobobobobo",
-      "LULULULULU",
-    ],
-    name: "Nome4",
-  },
-  {
-    title: "Titulo 4",
-    deposition: [
-      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
-      "bobobobobo",
-      "LULULULULU",
-    ],
-    name: "Nome4",
-  },
-  {
-    title: "Titulo 4",
-    deposition: [
-      "LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2 LALALALAA2",
-      "bobobobobo",
-      "LULULULULU",
-    ],
-    name: "Nome4",
-  },
-  {
-    title: "Titulo 4",
-    deposition: ["LALALALAA4", "bobobobobo", "LULULULULU"],
-    name: "Nome4",
-  },
-];
 
 const Depositions = () => {
   const [containerDepositionsOpen, setContainerDepositionsOpen] =
     useState<boolean>(false);
-  const handleSubmit = (e: any) => {
-    console.log(e);
+  const [arrayDepoimentos, setArrayDepoimentos] = useState<Depoimento[]>([]);
+
+  async function fetchData() {
+    try {
+      const data = await pegarDepoimento();
+      setArrayDepoimentos(data.depoimentos);
+      console.log("data:", data);
+    } catch (error) {
+      console.error("Erro ao buscar depoimento:", error);
+    }
+  }
+
+  useEffect(() => {
+    fetchData();
+  }, []);
+
+  const handleSubmit = async (e: any) => {
+    const params: Data = {
+      Nome: e.nome,
+      Conteudo: e.depoimento,
+      Email: e.email,
+      Titulo: e.titulo,
+    };
+    try {
+      await enviarDepoimento(params);
+      fetchData();
+      e.nome = "";
+      e.email = "";
+      e.titulo = "";
+      e.depoimento = "";
+    } catch (error) {
+      console.error("Erro ao enviar depoimento:", error);
+    }
   };
 
-  console.log("isMobile", isMobile);
-
+  console.log(isMobile);
   return (
     <>
       <BeautyTitle FrontTitle="Depoimentos" BackTitle="FALE!" Color="White" />
@@ -105,19 +64,19 @@ const Depositions = () => {
 
       {!isMobile ? (
         <ContainerCardsDepositinonsFC
-          overflow={containerDepositionsOpen}
+          overflow={containerDepositionsOpen ? "true" : "false"}
           className="d-flex justify-content-center depositionScroll"
         >
           <div className="row col-4">
             <div className="col-12">
-              {array.map(
+              {arrayDepoimentos?.map(
                 (item, index) =>
                   index % 2 == 0 && (
                     <CardDepositions
                       key={index}
-                      title={item.title}
-                      deposition={item.deposition}
-                      name={item.name}
+                      title={item.Titulo}
+                      deposition={item.Conteudo}
+                      name={item.Nome}
                     />
                   )
               )}
@@ -125,14 +84,14 @@ const Depositions = () => {
           </div>
           <div className="row col-4">
             <div className="col-12">
-              {array.map(
+              {arrayDepoimentos.map(
                 (item, index) =>
                   index % 2 == 1 && (
                     <CardDepositions
                       key={index}
-                      title={item.title}
-                      deposition={item.deposition}
-                      name={item.name}
+                      title={item.Titulo}
+                      deposition={item.Conteudo}
+                      name={item.Nome}
                     />
                   )
               )}
@@ -163,12 +122,12 @@ const Depositions = () => {
       ) : (
         <div className="d-flex justify-content-center">
           <div className="row col-10">
-            {array.map((item, index) => (
+            {arrayDepoimentos.map((item, index) => (
               <CardDepositions
                 key={index}
-                title={item.title}
-                deposition={item.deposition}
-                name={item.name}
+                title={item.Titulo}
+                deposition={item.Conteudo}
+                name={item.Nome}
               />
             ))}
           </div>

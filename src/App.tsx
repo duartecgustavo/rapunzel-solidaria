@@ -12,6 +12,9 @@ import {
 } from "@/pages";
 import { colors } from "@/styles/colors";
 import SupportersPage from "@/pages/SupportersPage";
+import { enviarDepoimento } from "@/services/connectApi";
+
+// pendente - Incluir botão de voltar ao topo
 
 // pendente - FIGMA, Criar prototipo mobile - criar tela principal para mobile
 
@@ -52,7 +55,7 @@ function App() {
         id="HowToReceivePage"
         background={colors.five_color_violet_pink_BC6BFA}
         height="auto"
-        paddingBottom="none !important"
+        pBottom="none !important"
       >
         <HowToReceivePage />
       </Container>
@@ -61,7 +64,7 @@ function App() {
         id="Apoiadores"
         background={colors.white_FFFFFF}
         height="auto"
-        paddingBottom="0px"
+        pBottom="0px"
       >
         <SupportersPage />
       </Container>

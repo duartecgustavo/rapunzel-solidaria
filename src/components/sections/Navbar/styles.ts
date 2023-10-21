@@ -87,6 +87,10 @@ export const ButtonSC = styled.button<{ isoutlined?: any }>`
     color: ${colors.seven_color_violet_dark_6E36B3};
   }
 
+  @media (max-width: 768px) {
+    width: 100% !important;
+  }
+
   &:hover {
     background-color: ${(props) =>
       props.isoutlined
@@ -97,11 +101,6 @@ export const ButtonSC = styled.button<{ isoutlined?: any }>`
         ? colors.secondary_color_green_light_6FBECF
         : colors.primary_color_violet_A73AA7};
     border: ${(props) => props.isoutlined && "3px solid #6FBECF"};
-
-    @media (max-width: 768px) {
-      width: 100% !important;
-      background-color: red !important;
-    }
   }
 `;
 
