@@ -78,7 +78,7 @@ function App() {
         id="HowToReceivePage"
         background={colors.five_color_violet_pink_BC6BFA}
         height="auto"
-        pBottom="none !important"
+        paddingBottom="none !important"
       >
         <HowToReceivePage />
       </Container>
@@ -87,7 +87,7 @@ function App() {
         id="Apoiadores"
         background={colors.white_FFFFFF}
         height="auto"
-        pBottom="0px"
+        paddingBottom="0px"
       >
         <SupportersPage />
       </Container>
