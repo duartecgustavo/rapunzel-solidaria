@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { IContainerProps } from "./Container";
 
 export interface IContainerPropsSC {
   id?: string;

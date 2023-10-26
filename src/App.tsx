@@ -58,6 +58,7 @@ function App() {
       >
         <PrimaryPage />
       </Container>
+      {/* Pendente - ajustar toasts */}
       <button onClick={notify}>Notify</button>;
           <ToastContainer />
       <Container
