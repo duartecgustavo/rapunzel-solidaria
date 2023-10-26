@@ -8,6 +8,7 @@ export const colors = {
   white_gray_E7E7E7_40: "rgba(231, 231, 231, 0.4)",
   black_000000: "#000000",
   black_transparent_25: "rgba(0, 0, 0, 0.25)",
+  black_transparent_50: "rgba(0, 0, 0, 0.50)",
   black_transparent_80: "rgba(0, 0, 0, 0.8)",
   primary_color_violet_A73AA7: "#a73aa7",
   primary_transparent_color_violet_10: "rgba(167, 58, 167, 0.1)",

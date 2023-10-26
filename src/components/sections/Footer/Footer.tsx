@@ -3,6 +3,9 @@ import { colors } from "@/styles/colors";
 import { FooterSC, FooterSectionSC, GridContainerSC } from "./style";
 
 const Footer = () => {
+
+  const anoAtual = new Date().getFullYear();
+
   return (
     <>
       <FooterSC className="d-flex container-fluid justify-content-center flex-column align-items-center">
@@ -114,7 +117,7 @@ const Footer = () => {
             family="Architects Daughter"
             align="left"
           >
-            Copyright © 2023 Rapunzel Solidária - Todos os direitos reservados.
+            Copyright © {anoAtual} Rapunzel Solidária - Todos os direitos reservados.
           </Text>
         </FooterSectionSC>
       </FooterSC>

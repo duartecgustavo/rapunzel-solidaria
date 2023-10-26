@@ -6,6 +6,11 @@ export const FooterSC = styled.div`
   background: ${colors.seven_color_violet_dark_6E36B3};
   padding: 100px;
   gap: 60px;
+
+  @media (max-width: 768px) {
+    padding: 30px;
+
+  }
 `;
 
 export const FooterSectionSC = styled.section`

@@ -24,7 +24,7 @@ export const NavbarSC = styled.div`
   }
 
   @media (max-width: 768px) {
-    position: relative;
+    position: fixed;
     background-color: ${colors.five_color_violet_pink_BC6BFA};
 
     .desktop {

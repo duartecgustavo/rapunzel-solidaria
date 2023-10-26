@@ -1,6 +1,7 @@
 import "@/App.css";
 import { Footer, Navbar } from "@/components/sections";
 import { Container } from "@/components/shareds";
+import ButtonGoTop from "@/components/shareds/ButtonGoTop/ButtonTop";
 import {
   DepositionsPage,
   Drawers,
@@ -10,25 +11,45 @@ import {
   PrimaryPage,
   WhoWeArePage,
 } from "@/pages";
-import { colors } from "@/styles/colors";
 import SupportersPage from "@/pages/SupportersPage";
-import { enviarDepoimento } from "@/services/connectApi";
+import { colors } from "@/styles/colors";
 
-// pendente - Incluir botão de voltar ao topo
+//
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 // pendente - FIGMA, Criar prototipo mobile - criar tela principal para mobile
 
 // pendente - TELA DE INICIO MOBILE (CAPA COM O NOME DO SITE E UMA IMAGEM EM SVG)
-
-// pendente - ADICIONAR BASICO DE ACESSIBILIDADE (ohar no chat gpt)
-//legacy.reactjs.org/docs/accessibility.html
-//www.npmjs.com/package/react-axe
-// react-axe é uma ferramenta de análise de acessibilidade que pode ser usada com o React. Ele fornece relatórios detalhados sobre problemas de acessibilidade em seu aplicativo.
-
 function App() {
+  const notify = () => {
+    toast("Default Notification !");
+
+    toast.success("Success Notification !", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+
+    toast.error("Error Notification !", {
+      position: toast.POSITION.TOP_LEFT,
+    });
+
+    toast.warn("Warning Notification !", {
+      position: toast.POSITION.BOTTOM_LEFT,
+    });
+
+    toast.info("Info Notification !", {
+      position: toast.POSITION.BOTTOM_CENTER,
+    });
+
+    toast("Custom Style Notification with css class!", {
+      position: toast.POSITION.BOTTOM_RIGHT,
+      className: "foo-bar",
+    });
+  };
   return (
     <>
       <Navbar />
+      <div id="goToTopRef"></div>
 
       <Container
         background={colors.primary_color_violet_A73AA7}
@@ -37,6 +58,8 @@ function App() {
       >
         <PrimaryPage />
       </Container>
+      <button onClick={notify}>Notify</button>;
+          <ToastContainer />
       <Container
         id="WhoWeArePage"
         background={colors.white_FFFFFF}
@@ -76,6 +99,7 @@ function App() {
       >
         <DepositionsPage />
       </Container>
+      <ButtonGoTop />
 
       <Footer />
       <Modals />
