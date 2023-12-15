@@ -6,6 +6,7 @@ import styled from "styled-components";
 export const NavbarSC = styled.div`
   width: 100%;
   height: 90px;
+  z-index: 2;
 
   position: fixed;
 

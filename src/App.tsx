@@ -9,14 +9,14 @@ import {
   HowToReceivePage,
   Modals,
   PrimaryPage,
+  PrimaryPageMobile,
   WhoWeArePage,
 } from "@/pages";
 import SupportersPage from "@/pages/SupportersPage";
 import { colors } from "@/styles/colors";
-
-//
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { isMobile } from "react-device-detect";
 
 // pendente - FIGMA, Criar prototipo mobile - criar tela principal para mobile
 
@@ -49,18 +49,18 @@ function App() {
   return (
     <>
       <Navbar />
-      <div id="goToTopRef"></div>
-
+      <div id="goToTopRef" />
       <Container
         background={colors.primary_color_violet_A73AA7}
-        ismobile="false"
         height="100vh"
+        paddingTop="0px"
+        paddingBottom="0px"
       >
-        <PrimaryPage />
+        {isMobile ? <PrimaryPageMobile /> : <PrimaryPage />}
       </Container>
       {/* Pendente - ajustar toasts */}
       <button onClick={notify}>Notify</button>;
-          <ToastContainer />
+      <ToastContainer />
       <Container
         id="WhoWeArePage"
         background={colors.white_FFFFFF}
@@ -83,7 +83,6 @@ function App() {
       >
         <HowToReceivePage />
       </Container>
-
       <Container
         id="Apoiadores"
         background={colors.white_FFFFFF}
@@ -92,7 +91,6 @@ function App() {
       >
         <SupportersPage />
       </Container>
-
       <Container
         id="DepositionsPage"
         background={colors.six_color_orange_C18151}
@@ -101,7 +99,6 @@ function App() {
         <DepositionsPage />
       </Container>
       <ButtonGoTop />
-
       <Footer />
       <Modals />
       <Drawers />
