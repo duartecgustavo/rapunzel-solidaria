@@ -12,9 +12,9 @@ Inspirado por um belo projeto chamado **Rapunzel Solidária**, tive a ideia de r
 
 O propósito deste site é **receber doações de cabelo** de todos os cantos do Brasil e do mundo, e confeccionar perucas para crianças, jovens e adultos que estão em tratamento contra o câncer e outras doenças que resultam na perda de cabelo, como a Alopecia.
 
-Para obter mais informações sobre o projeto original, visite o [**site oficial**](https://www.rapunzelsolidaria.org.br/){:target="_blank"}.
+Para obter mais informações sobre o projeto original, visite o [**site oficial**](https://www.rapunzelsolidaria.org.br/).
 
-![Captura de tela da área de links](../public/RapunzelSolidariaBanner.png)
+![Captura de tela da área de links](./public/RapunzelSolidariaBanner.png)
 
 ---
 
@@ -27,11 +27,11 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 ### Links
 
-- Rapunzel Solidária [NOVO] - [Link para o site 🚀](https://rapunzel-solidaria.vercel.app/){:target="_blank"}
+- Rapunzel Solidária [NOVO] - [Link para o site 🚀](https://rapunzel-solidaria.vercel.app/)
 
-- Figma - [Link para o figma 📱](https://www.google.com.br){:target="_blank"}
+- Figma - [Link para o figma 📱](https://www.google.com.br)
 
-- Rapunzel Solidária [ORIGINAL] - [www.rapunzelsolidaria.org.br](https://www.rapunzelsolidaria.org.br/){:target="_blank"}
+- Rapunzel Solidária [ORIGINAL] - [www.rapunzelsolidaria.org.br](https://www.rapunzelsolidaria.org.br/)
 
 ---
 
@@ -58,7 +58,6 @@ yarn dev
 - Vite
 - Atomic Design
 - Styled Component
-- Jest
 **Backend**
 - NodeJS
 **Banco de dados**
@@ -69,7 +68,7 @@ yarn dev
 
 ## Contato
 
-| Linkedin | [linkedin.com/in/gustavo...](https://www.linkedin.com/in/gustavo-castanho-duarte-578127160) |
+- Linkedin: [linkedin.com/in/gustavo...](https://www.linkedin.com/in/gustavo-castanho-duarte-578127160) |
 | E-mail | [castanho.dev@outlook.com](castanho.dev@outlook.com)
 
 ---
