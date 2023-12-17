@@ -20,8 +20,8 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 ### Veja um pouco mais
 
-![Captura de tela da área de links](./public/QuemSomos.png)
-![Captura de tela da área de links](./public/ComoDoar.png)
+![Captura de tela da área de links](/public/QuemSomosBanner.png)
+![Captura de tela da área de links](/public/ComoDoarBanner.png)
 
 ---
 
@@ -33,9 +33,9 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 - Rapunzel Solidária [ORIGINAL] - [www.rapunzelsolidaria.org.br](https://www.rapunzelsolidaria.org.br/)
 
-### Instalação do projeto && Como rodar
-
 ---
+
+### Instalação do projeto && Como rodar
 
 ```sh
 git clone https://github.com/duartecgustavo/rapunzel-solidaria.git 
