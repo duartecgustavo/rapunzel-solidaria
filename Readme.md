@@ -17,13 +17,6 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 ---
 
-### Veja um pouco mais
-
-![Captura de tela da área de links](/public/QuemSomosBanner.png)
-![Captura de tela da área de links](/public/ComoDoarBanner.png)
-
----
-
 ### Links
 
 - Rapunzel Solidária [NOVO] - [Link para o site 🚀](https://rapunzel-solidaria.vercel.app/)
@@ -31,22 +24,6 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 - Figma - [Link para o figma 📱](https://www.google.com.br)
 
 - Rapunzel Solidária [ORIGINAL] - [www.rapunzelsolidaria.org.br](https://www.rapunzelsolidaria.org.br/)
-
----
-
-### Instalação do projeto && Como rodar
-
-```sh
-git clone https://github.com/duartecgustavo/rapunzel-solidaria.git 
-npm i
-npm run dev
-```
-ou
-```sh
-git clone https://github.com/duartecgustavo/rapunzel-solidaria.git 
-yarn
-yarn dev
-```
 
 ---
 
