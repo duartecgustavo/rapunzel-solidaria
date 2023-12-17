@@ -18,10 +18,10 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 ---
 
-### Prints...
+### Veja um pouco mais
 
-<img src="/public/print_home.png" width="500" height="280" alt="Print da área de links">
-<img src="/public/print_doar.png" width="500" height="280" alt="Print pagina de doar cabelo">
+![Captura de tela da área de links](./public/QuemSomos.png)
+![Captura de tela da área de links](./public/ComoDoar.png)
 
 ---
 
@@ -33,9 +33,9 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 - Rapunzel Solidária [ORIGINAL] - [www.rapunzelsolidaria.org.br](https://www.rapunzelsolidaria.org.br/)
 
----
-
 ### Instalação do projeto && Como rodar
+
+---
 
 ```sh
 git clone https://github.com/duartecgustavo/rapunzel-solidaria.git 
@@ -68,8 +68,8 @@ yarn dev
 
 ## Contato
 
-- Linkedin: [linkedin.com/in/gustavo...](https://www.linkedin.com/in/gustavo-castanho-duarte-578127160) |
-| E-mail | [castanho.dev@outlook.com](castanho.dev@outlook.com)
+- Linkedin: [linkedin.com/in/gustavo...](https://www.linkedin.com/in/gustavo-castanho-duarte-578127160)
+- E-mail: [castanho.dev@outlook.com](castanho.dev@outlook.com)
 
 ---
 
