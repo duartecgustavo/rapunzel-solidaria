@@ -2,7 +2,7 @@
 
 ---
 
-### [Link para o site 🚀](https://rapunzel-solidaria.vercel.app/)
+### [Link para o site 🚀](https://rapunzel-solidaria.vercel.app/){:target="_blank"}
 
 ---
 
@@ -12,9 +12,9 @@ Inspirado por um belo projeto chamado **Rapunzel Solidária**, tive a ideia de r
 
 O propósito deste site é **receber doações de cabelo** de todos os cantos do Brasil e do mundo, e confeccionar perucas para crianças, jovens e adultos que estão em tratamento contra o câncer e outras doenças que resultam na perda de cabelo, como a Alopecia.
 
-Para obter mais informações sobre o projeto original, visite o [**site oficial**](https://www.rapunzelsolidaria.org.br/).
+Para obter mais informações sobre o projeto original, visite o [**site oficial**](https://www.rapunzelsolidaria.org.br/){:target="_blank"}.
 
-![Captura de tela da área de links](/public/RapunzelSolidariaBanner.png)
+![Captura de tela da área de links](../public/RapunzelSolidariaBanner.png)
 
 ---
 
@@ -27,11 +27,11 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 
 ### Links
 
-- Rapunzel Solidária [NOVO] - [Link para o site 🚀](https://rapunzel-solidaria.vercel.app/)
+- Rapunzel Solidária [NOVO] - [Link para o site 🚀](https://rapunzel-solidaria.vercel.app/){:target="_blank"}
 
-- Figma - [Link para o figma 📱](https://www.google.com.br)
+- Figma - [Link para o figma 📱](https://www.google.com.br){:target="_blank"}
 
-- Rapunzel Solidária [ORIGINAL] - [www.rapunzelsolidaria.org.br](https://www.rapunzelsolidaria.org.br/)
+- Rapunzel Solidária [ORIGINAL] - [www.rapunzelsolidaria.org.br](https://www.rapunzelsolidaria.org.br/){:target="_blank"}
 
 ---
 
@@ -41,6 +41,12 @@ Para obter mais informações sobre o projeto original, visite o [**site oficial
 git clone https://github.com/duartecgustavo/rapunzel-solidaria.git 
 npm i
 npm run dev
+```
+ou
+```sh
+git clone https://github.com/duartecgustavo/rapunzel-solidaria.git 
+yarn
+yarn dev
 ```
 
 ---
