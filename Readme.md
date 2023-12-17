@@ -2,7 +2,7 @@
 
 ---
 
-### [Link para o site 🚀](https://rapunzel-solidaria.vercel.app/){:target="_blank"}
+### <a href="https://rapunzel-solidaria.vercel.app/" target="_blank">Link para o site 🚀</a>
 
 ---
 
