@@ -1,6 +1,5 @@
 import { BeautyTitle } from "@/components/shareds";
 import {
-  ContainerSupportersSC,
   LogoBigLarSC,
   LogoClaroSC,
   LogoCosanSC,
@@ -10,7 +9,7 @@ import {
   LogoSeconSC,
   LogoStudioSC,
   LogoTokyoMarineSC,
-  LogoYpirangaSC,
+  LogoYpirangaSC
 } from "./styles";
 // pendente - colocar responsividade nos apoiadores
 
