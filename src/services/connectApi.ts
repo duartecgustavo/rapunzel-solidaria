@@ -13,7 +13,7 @@ type RespostaDeDepoimento = {
 };
 
 const api = axios.create({
-  baseURL: 'http://localhost:8081',
+  baseURL: 'https://rapunzel-solidaria-api.vercel.app',
   headers: {
     'Content-Type': 'application/json',
   },
