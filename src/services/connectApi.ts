@@ -1,5 +1,5 @@
 import axios from "axios";
-import { toast, ToastContainer } from "react-toastify";
+import { toast } from "react-toastify";
 
 export type Data = {
   Titulo: string;
