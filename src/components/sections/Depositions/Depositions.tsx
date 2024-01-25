@@ -56,6 +56,7 @@ const Depositions = () => {
   };
 
   console.log(isMobile);
+  console.log("containerDepositionsOpen", containerDepositionsOpen);
   return (
     <>
       <BeautyTitle FrontTitle="Depoimentos" BackTitle="FALE!" Color="White" />
@@ -64,7 +65,7 @@ const Depositions = () => {
 
       {!isMobile ? (
         <ContainerCardsDepositinonsFC
-          overflow={containerDepositionsOpen ? "true" : "false"}
+          overflow={containerDepositionsOpen ? true : false}
           className="d-flex justify-content-center depositionScroll"
         >
           <div className="row col-4">
@@ -97,7 +98,7 @@ const Depositions = () => {
               )}
             </div>
           </div>
-          {!containerDepositionsOpen && (
+          {!containerDepositionsOpen ? (
             <ButtonExpandContainerCards
               onClick={() =>
                 setContainerDepositionsOpen(!containerDepositionsOpen)
@@ -115,6 +116,26 @@ const Depositions = () => {
                 }}
               >
                 MOSTRAR TODOS
+              </Text>
+            </ButtonExpandContainerCards>
+          ) : (
+            <ButtonExpandContainerCards
+              onClick={() =>
+                setContainerDepositionsOpen(!containerDepositionsOpen)
+              }
+            >
+              <Text
+                size="28px"
+                align="left"
+                color={colors.white_FFFFFF}
+                family="Concert One"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  cursor: "pointer",
+                }}
+              >
+                NÃO MOSTRAR TODOS
               </Text>
             </ButtonExpandContainerCards>
           )}

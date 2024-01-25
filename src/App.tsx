@@ -14,38 +14,11 @@ import {
 } from "@/pages";
 import SupportersPage from "@/pages/SupportersPage";
 import { colors } from "@/styles/colors";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import { isMobile } from "react-device-detect";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
-// pendente - FIGMA, Criar prototipo mobile - criar tela principal para mobile
-
-// pendente - TELA DE INICIO MOBILE (CAPA COM O NOME DO SITE E UMA IMAGEM EM SVG)
 function App() {
-  const notify = () => {
-    toast("Default Notification !");
-
-    toast.success("Success Notification !", {
-      position: toast.POSITION.TOP_CENTER,
-    });
-
-    toast.error("Error Notification !", {
-      position: toast.POSITION.TOP_LEFT,
-    });
-
-    toast.warn("Warning Notification !", {
-      position: toast.POSITION.BOTTOM_LEFT,
-    });
-
-    toast.info("Info Notification !", {
-      position: toast.POSITION.BOTTOM_CENTER,
-    });
-
-    toast("Custom Style Notification with css class!", {
-      position: toast.POSITION.BOTTOM_RIGHT,
-      className: "foo-bar",
-    });
-  };
   return (
     <>
       <Navbar />
@@ -58,8 +31,6 @@ function App() {
       >
         {isMobile ? <PrimaryPageMobile /> : <PrimaryPage />}
       </Container>
-      {/* Pendente - ajustar toasts */}
-      <button onClick={notify}>Notify</button>;
       <ToastContainer />
       <Container
         id="WhoWeArePage"

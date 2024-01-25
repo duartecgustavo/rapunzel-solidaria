@@ -1,9 +1,10 @@
 import { Text } from "@/components/shareds";
 import { colors } from "@/styles/colors";
 import { FormEvent, useState } from "react";
+import { isMobile } from "react-device-detect";
+import { toast } from "react-toastify";
 import { ButtonSC } from "../Navbar/styles";
 import { FormFC } from "./styles";
-import { isMobile } from "react-device-detect";
 
 interface FormData {
   nome: string;
@@ -42,35 +43,39 @@ const DepositionForm = ({ onSubmit }: DepositionFormProps) => {
       nome: "",
       email: "",
       titulo: "",
-      depoimento: ""
+      depoimento: "",
     };
 
     if (!nome) {
       newErrors.nome = "O campo Nome é obrigatório";
     }
-    
+
     if (!email) {
-      console.log("aquiemail")
+      console.log("aquiemail");
       newErrors.email = "O campo Email é obrigatório";
     } else if (!isValidEmail(email)) {
-      console.log("aquiemail")
+      console.log("aquiemail");
       newErrors.email = "Email inválido";
     }
-    
+
     if (!titulo) {
-      console.log("aquititulo")
+      console.log("aquititulo");
       newErrors.titulo = "O campo titulo é obrigatório";
     }
-    
+
     if (!depoimento) {
-      console.log("aquidepoimento")
+      console.log("aquidepoimento");
       newErrors.depoimento = "O campo Depoimento é obrigatório";
     }
 
-    const errorMessages = Object.values(newErrors).filter((error) => error).join("\n");
+    const errorMessages = Object.values(newErrors)
+      .filter((error) => error)
+      .join("\n");
     if (Object.values(newErrors).some((error) => error)) {
       setErrors(newErrors);
-      alert(errorMessages);
+      toast.error(errorMessages, {
+        position: toast.POSITION.TOP_CENTER,
+      });
     } else {
       onSubmit({ nome, email, depoimento, titulo });
       setNome("");

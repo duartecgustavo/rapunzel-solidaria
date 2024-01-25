@@ -31,61 +31,91 @@ export const ContainerSupportersSC = styled.div`
 
 export const LogoBigLarSC = styled(LogoBigLar)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoClaroSC = styled(LogoClaro)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoCosanSC = styled(LogoCosan)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoDrAgoraSC = styled(LogoDrAgora)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoMsdSC = styled(LogoMsd)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoNaturaSC = styled(LogoNatura)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoSeconSC = styled(LogoSecon)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoStudioSC = styled(LogoStudio)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoTokyoMarineSC = styled(LogoTokyoMarine)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;
 export const LogoYpirangaSC = styled(LogoYpiranga)`
   padding: 10px;
+  height: 120px;
+  transition: transform 0.4s;
   &:hover {
-    cursor: pointer;
+    transform: scale(1.25);
+    cursor: cell;
   }
 `;

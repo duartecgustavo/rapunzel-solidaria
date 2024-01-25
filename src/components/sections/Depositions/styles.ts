@@ -5,11 +5,9 @@ import { colors } from "@/styles/colors";
 export const ContainerCardDepositionsFC = styled.div`
   display: flex;
   flex-direction: column;
-
   padding: 20px;
   gap: 20px !important;
   background-color: white;
-
   margin-bottom: 16px !important;
 `;
 
@@ -25,9 +23,9 @@ export const AspasSvgSC = styled(Aspas)`
   width: 70px;
 `;
 
-export const ContainerCardsDepositinonsFC = styled.div<{ overflow: any }>`
+export const ContainerCardsDepositinonsFC = styled.div<{ overflow: boolean }>`
   position: relative;
-  height: ${(props) => (props.overflow ? "auto" : "800px")};
+  height: ${(props) => (props.overflow ? "auto" : "400px")};
   overflow: ${(props) => (props.overflow ? "auto" : "hidden")};
 `;
 

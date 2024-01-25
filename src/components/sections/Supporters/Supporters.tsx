@@ -11,14 +11,13 @@ import {
   LogoTokyoMarineSC,
   LogoYpirangaSC
 } from "./styles";
-// pendente - colocar responsividade nos apoiadores
 
 const Supporters = () => {
   return (
     <>
     <div className="container">
       <BeautyTitle FrontTitle="Apoiadores" BackTitle="AJUDE" Color="Violet" />
-      <div className="row justify-content-center gap-2">
+      <div className="row justify-content-center gap-2 mb-5">
         <LogoBigLarSC className="col-2 col-md-3"/>
         <LogoClaroSC className="col-2 col-md-3"/>
         <LogoCosanSC className="col-2 col-md-3"/>
