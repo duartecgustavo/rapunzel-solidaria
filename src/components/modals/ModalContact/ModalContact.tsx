@@ -60,7 +60,7 @@ const ModalContact = () => {
                   copy={true}
                   color={colors.black_transparent_80}
                 >
-                  33776098000122
+                  66719022000144
                 </Text>
               </div>
               <div className="mt-3">

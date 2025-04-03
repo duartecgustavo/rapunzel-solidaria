@@ -3,7 +3,6 @@ import { colors } from "@/styles/colors";
 import { FooterSC, FooterSectionSC, GridContainerSC } from "./style";
 
 const Footer = () => {
-
   const anoAtual = new Date().getFullYear();
 
   return (
@@ -58,7 +57,7 @@ const Footer = () => {
             align="left"
             style={{ display: "flex" }}
           >
-            Rua Amaro Cavalheiro, 140 - Pinheiros - De{" "}
+            Rua José Ferreira, 250 - Vila Esperança - De{" "}
             <TextMark color="White"> terça a sábado das 10h às 17h. </TextMark>
           </Text>
         </FooterSectionSC>
@@ -78,8 +77,8 @@ const Footer = () => {
             family="Architects Daughter"
             align="left"
           >
-            HOSPITAL ITACI - Rua Galeno de Almeida, 148 - Pinheiros - De segunda
-            a sexta das 7h às 17h.
+            CLÍNICA VIDA NOVA - Rua Doutor Almeida Prado, 256 - Centro - De
+            segunda a sexta das 8h às 18h.
           </Text>
           <Text
             size="18px"
@@ -87,7 +86,7 @@ const Footer = () => {
             family="Architects Daughter"
             align="left"
           >
-            ESCOLA PROJETO APRENDER - Rua Luos Góis, 1832 - Vila Clementino - De
+            ESCOLA SABER MAIS - Rua João Figueiredo, 920 - Jardim Paulista - De
             segunda a sexta das 8h às 17h.
           </Text>
           <Text
@@ -96,8 +95,8 @@ const Footer = () => {
             family="Architects Daughter"
             align="left"
           >
-            GRUPO ATITUDE - Av. Dom Pedro II, 1240 - Santo André - De terça a
-            sábado das 8h às 17h.
+            INSTITUTO NOVO CAMINHO - Av. Senador Vergueiro, 1520 - São Bernardo
+            do Campo - De terça a sábado das 8h às 17h.
           </Text>
         </FooterSectionSC>
         <FooterSectionSC>
@@ -117,7 +116,8 @@ const Footer = () => {
             family="Architects Daughter"
             align="left"
           >
-            Copyright © {anoAtual} Rapunzel Solidária - Todos os direitos reservados.
+            Copyright © {anoAtual} Mechas do Bem - Todos os direitos
+            reservados.
           </Text>
         </FooterSectionSC>
       </FooterSC>

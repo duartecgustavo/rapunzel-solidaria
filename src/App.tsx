@@ -62,6 +62,8 @@ function App() {
       >
         <SupportersPage />
       </Container>
+      <div id="goToTopDepoiments" />
+
       <Container
         id="DepositionsPage"
         background={colors.six_color_orange_C18151}

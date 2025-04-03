@@ -17,7 +17,7 @@ const WhoWeArePage = () => {
             size="22px"
           >
             Somos uma Organização sem Fins Econômicos, chamada Associação
-            Rapunzel Solidária.
+            Cabelos de Esperança.
           </Text>
           <Text
             style={{ display: "flex", justifyContent: "center" }}
@@ -44,28 +44,28 @@ const WhoWeArePage = () => {
               family="Architects Daughter"
               size="22px"
             >
-              Elizabeth Lomaski - Presidente fundadora
+              Mariana Albuquerque – Presidente fundadora
             </Text>
             <Text
               style={{ display: "flex", justifyContent: "center" }}
               family="Architects Daughter"
               size="22px"
             >
-              Alexandre L. Rodrigues - Diretor Administrativo e Financeiro
+              Ricardo S. Mendes – Diretor Administrativo e Financeiro
             </Text>
             <Text
               style={{ display: "flex", justifyContent: "center" }}
               family="Architects Daughter"
               size="22px"
             >
-              Toninha Rocha - Produção Perucas
+              Sônia Freitas – Produção Perucas
             </Text>
             <Text
               style={{ display: "flex", justifyContent: "center" }}
               family="Architects Daughter"
               size="22px"
             >
-              Alessandra Rocha - Atendimento Pacientes
+              Fernanda Oliveira – Atendimento Pacientes
             </Text>
           </div>
           <Text

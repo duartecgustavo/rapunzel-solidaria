@@ -62,7 +62,6 @@ const Depositions = () => {
       <BeautyTitle FrontTitle="Depoimentos" BackTitle="FALE!" Color="White" />
 
       <DepositionForm onSubmit={handleSubmit} />
-
       {!isMobile ? (
         <ContainerCardsDepositinonsFC
           overflow={containerDepositionsOpen ? true : false}
@@ -121,8 +120,11 @@ const Depositions = () => {
           ) : (
             <ButtonExpandContainerCards
               onClick={() =>
-                setContainerDepositionsOpen(!containerDepositionsOpen)
+                setTimeout(() => {
+                  setContainerDepositionsOpen(!containerDepositionsOpen);
+                }, 1000)
               }
+              href="#goToTopDepoiments"
             >
               <Text
                 size="28px"

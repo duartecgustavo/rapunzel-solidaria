@@ -1,4 +1,4 @@
-import { ReactComponent as IconLogoRapunzelSolidaria } from "@/assets/logo-rapunzel-solidaria.svg";
+import { ReactComponent as IconLogoRMechasDoBem } from "@/assets/logo_mechas_do_bem.svg";
 import { ReactComponent as IconMenu } from "@/assets/icon-menu.svg";
 import { colors } from "@/styles/colors";
 import styled from "styled-components";
@@ -38,7 +38,7 @@ export const NavbarSC = styled.div`
   }
 `;
 
-export const IconLogoSC = styled(IconLogoRapunzelSolidaria)`
+export const IconLogoSC = styled(IconLogoRMechasDoBem)`
   width: 180px;
   height: 70px;
 

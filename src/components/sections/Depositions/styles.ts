@@ -29,7 +29,7 @@ export const ContainerCardsDepositinonsFC = styled.div<{ overflow: boolean }>`
   overflow: ${(props) => (props.overflow ? "auto" : "hidden")};
 `;
 
-export const ButtonExpandContainerCards = styled.button`
+export const ButtonExpandContainerCards = styled.a`
   width: 70%;
   height: 100px;
   background: red;

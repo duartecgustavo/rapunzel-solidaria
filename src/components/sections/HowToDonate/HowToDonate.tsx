@@ -33,7 +33,7 @@ const HowToDonate = () => {
           />
           <CardDonate
             img={img4}
-            text="Se quiser, você pode tirar uma foto segurando o cabelo cortado e postar NAS SUAS REDES SOCIAIS usando as hashtags: #rapunzelsolidaria #doeseucabelo #cabelocresce #doarfazbem #gratidao #perucasdobem #perucasdeamor"
+            text="Se quiser, você pode tirar uma foto segurando o cabelo cortado e postar NAS SUAS REDES SOCIAIS usando as hashtags: #mechasdobem #doeseucabelo #cabelocresce #doarfazbem #gratidao #perucasdobem #perucasdeamor"
             number={4}
           />
           <CardDonate

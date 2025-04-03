@@ -35,7 +35,7 @@ const HowToReceive = () => {
             >
                 Para receber uma peruca em sua casa basta <TextMark color="White">clicar no LINK abaixo.</TextMark>
             </Text>
-            <FormLinkSC href="https://goo.gl/forms/YGswl9CjtxW0oRTJ2" target="_blanck">
+            <FormLinkSC href="https://youtu.be/4kgefGqOJPs" target="_blanck">
                 <Text
                     family="Concert One"
                     size="36px"

@@ -29,7 +29,7 @@ const DrawerLocal = () => {
               family="Architects Daughter"
               size="18px"
             >
-              Rua Amaro Cavalheiro, 140 - Pinheiros -{" "}
+              Rua José Ferreira, 250 - Vila Esperança -{" "}
               <TextMark color="Yellow" family="Architects Daughter">
                 {" "}
                 De terça a sábado das 10h às 17h.{" "}
@@ -54,15 +54,15 @@ const DrawerLocal = () => {
               family="Architects Daughter"
               size="18px"
             >
-              HOSPITAL ITACI - Rua Galeno de Almeida, 148 - Pinheiros - De
-              segunda a sexta das 7h às 17h.
+              CLÍNICA VIDA NOVA - Rua Doutor Almeida Prado, 256 - Centro - De
+              segunda a sexta das 8h às 18h.
             </Text>
             <Text
               style={{ display: "flex", justifyContent: "center" }}
               family="Architects Daughter"
               size="18px"
             >
-              ESCOLA PROJETO APRENDER - Rua Luos Góis, 1832 - Vila Clementino -
+              ESCOLA SABER MAIS - Rua João Figueiredo, 920 - Jardim Paulista -
               De segunda a sexta das 8h às 17h.
             </Text>
             <Text
@@ -70,8 +70,8 @@ const DrawerLocal = () => {
               family="Architects Daughter"
               size="18px"
             >
-              GRUPO ATITUDE - Av. Dom Pedro II, 1240 - Santo André - De terça a
-              sábado das 8h às 17h.
+              INSTITUTO NOVO CAMINHO - Av. Senador Vergueiro, 1520 - São
+              Bernardo do Campo - De terça a sábado das 8h às 17h.
             </Text>
           </div>
         </div>
