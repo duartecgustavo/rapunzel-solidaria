@@ -14,7 +14,7 @@ type RespostaDeDepoimento = {
 };
 
 const api = axios.create({
-  baseURL: "https://rapunzel-solidaria-api.vercel.app",
+  baseURL: "https://mechas-do-bem-api.vercel.app",
   headers: {
     "Content-Type": "application/json",
   },
